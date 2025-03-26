@@ -5,45 +5,63 @@ using UnityEngine.InputSystem;
 public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5;
-    public float jumpHeight = 10;
+    public float jumpSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 _moveDirection;
-
-    public InputActionReference jump;
+    public float gravityScale = 5f;
+    public float fallingGravityScale = 30f;
+    private float currentGravityScale;
 
     private float movementX;
     private float movementY;
+
+    public LayerMask Floor;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    private void OnMove(InputValue movementValue)
+    private void Start()
     {
-        Vector2 movementVector = movementValue.Get<Vector2>();
+        currentGravityScale = gravityScale;
+    }
+
+    bool IsGrounded() 
+    { 
+        return Physics2D.Raycast(transform.position, Vector2.down, 1.1f, Floor); 
+    }
+
+    public void OnMove(InputAction.CallbackContext ctx)
+    {
+        Vector2 movementVector = ctx.ReadValue<Vector2>();
 
         movementX = movementVector.x;
     }
 
-    private void OnEnable()
+    private void Update()
     {
-        jump.action.started += Jump;
+        if(rb.linearVelocity.y >= 0)
+        {
+            currentGravityScale = gravityScale;
+        }
+        else
+        {
+            currentGravityScale = fallingGravityScale;
+        }
     }
 
-    private void OnDisable()
+    public void Jump(InputAction.CallbackContext ctx)
     {
-        jump.action.started -= Jump;
-    }
-
-    private void Jump(InputAction.CallbackContext context)
-    {
-        movementY = jumpHeight;
+        if (IsGrounded() && ctx.ReadValue<float>() == 1)
+        {
+            rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+        }
     }
 
     private void FixedUpdate()
     {
         rb.linearVelocityX = (movementX * movementSpeed);
-        rb.AddForceY(movementY);
+        rb.AddForce(Physics2D.gravity * (currentGravityScale - 1) * rb.mass);
     }
 }
