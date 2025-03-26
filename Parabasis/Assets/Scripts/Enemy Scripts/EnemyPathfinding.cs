@@ -38,20 +38,42 @@ public class EnemyPathfinding : MonoBehaviour
             }
 
             Node thisNode = nodesToCheck[lowestF];
+            nodesToCheck.Remove(thisNode);
+
+            if (thisNode == target)
+            {
+                List<Node> path = new List<Node>();
+
+                path.Insert(0, target);
+
+                while (thisNode != target)
+                {
+                    thisNode = thisNode.cameFrom;
+                    path.Add(thisNode);
+                }
+
+                path.Reverse();
+                return path;
+            }
+
+            foreach (Node connectedNode in thisNode.connections)
+            {
+                float heldG = thisNode.G + Vector2.Distance(thisNode.transform.position, connectedNode.transform.position);
+
+                if (heldG < connectedNode.G)
+                {
+                    connectedNode.cameFrom = thisNode;
+                    thisNode.G = heldG;
+                    thisNode.H = Vector2.Distance(connectedNode.transform.position, target.transform.position);
+
+                    if (!nodesToCheck.Contains(connectedNode))
+                    {
+                        nodesToCheck.Add(connectedNode);
+                    }
+                }
+            }
         }
 
         return null;
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
