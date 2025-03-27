@@ -15,6 +15,9 @@ public class PlayerMovement : MonoBehaviour
     private float movementX;
     private float movementY;
 
+    public bool readyJump;
+    public bool jumpUnlocked;
+
     public LayerMask Floor;
 
     private void Awake()
@@ -49,6 +52,11 @@ public class PlayerMovement : MonoBehaviour
         {
             currentGravityScale = fallingGravityScale;
         }
+
+        if(IsGrounded() && jumpUnlocked)
+        {
+            readyJump = true;
+        }
     }
 
     public void Jump(InputAction.CallbackContext ctx)
@@ -56,6 +64,12 @@ public class PlayerMovement : MonoBehaviour
         if (IsGrounded() && ctx.ReadValue<float>() == 1)
         {
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+        }
+
+        if (readyJump && IsGrounded() == false && ctx.ReadValue<float>() == 1)
+        {
+            rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            readyJump = false;
         }
     }
 
