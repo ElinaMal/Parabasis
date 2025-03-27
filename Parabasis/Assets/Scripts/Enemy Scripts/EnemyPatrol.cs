@@ -15,11 +15,11 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.x == pointA.transform.position.x)
+        if (transform.position.x <= pointA.transform.position.x)
         {
             currentDestination = pointB.transform.position;
         }
-        if (transform.position.x == pointB.transform.position.x)
+        if (transform.position.x >= pointB.transform.position.x)
         {
             currentDestination = pointA.transform.position;
         }
