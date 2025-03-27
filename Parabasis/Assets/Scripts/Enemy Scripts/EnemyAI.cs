@@ -6,8 +6,8 @@ public class EnemyAI : MonoBehaviour
 {
     public Node thisNode;
     public List<Node> path = new List<Node>();
-    public Node chase;
-    public int x = 0;
+    public int chase;
+    public int x = 1;
 
     // Update is called once per frame
     void Update()
@@ -34,30 +34,28 @@ public class EnemyAI : MonoBehaviour
 
             while (path == null || path.Count == 0)
             {
-                Node node = nodes[x];
+                //Node node = nodes[x];
 
+                /*
                 if (node.target)
                 {
-                    chase = node;
-                    x = 0;
-                    break;
+                    chase = x;
+                    x = 1;
                 }
                 else
                 {
                     if (x == nodes.Length)
                     {
-                        x = 0;
-                        break;
+                        x = 1;
                     }
                     else
                     {
                         x++;
-                        break;
                     }
-                    break;
                 }
+                */
 
-                path = EnemyPathfinding.instance.GeneratePath(thisNode, chase);
+                path = EnemyPathfinding.instance.GeneratePath(thisNode, nodes[4]);
             }
         }
     }
