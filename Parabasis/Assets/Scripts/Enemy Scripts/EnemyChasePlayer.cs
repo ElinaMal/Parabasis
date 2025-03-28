@@ -8,7 +8,7 @@ public class EnemyChasePlayer : MonoBehaviour
     [SerializeField] private float velocity;
     public GameObject pointA;
     public GameObject pointB;
-    public EnemyPatrol enemyPatrol;
+    public WalkingEnemyPatrol enemyPatrol;
     private Rigidbody2D _rb;
 
     private void Awake()
