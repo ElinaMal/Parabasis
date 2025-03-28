@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float movementSpeed = 5;
     public float jumpSpeed = 5f;
+    public float dJumpSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 _moveDirection;
     public float gravityScale = 5f;
@@ -68,7 +69,8 @@ public class PlayerMovement : MonoBehaviour
 
         if (readyJump && IsGrounded() == false && ctx.ReadValue<float>() == 1)
         {
-            rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            rb.linearVelocityY = 0;
+            rb.AddForce(Vector2.up * dJumpSpeed, ForceMode2D.Impulse);
             readyJump = false;
         }
     }

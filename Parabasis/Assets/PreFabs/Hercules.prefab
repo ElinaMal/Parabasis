@@ -169,8 +169,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 10
   jumpSpeed: 15
+  dJumpSpeed: 20
   gravityScale: 5
   fallingGravityScale: 10
+  readyJump: 0
+  jumpUnlocked: 1
   Floor:
     serializedVersion: 2
     m_Bits: 8
