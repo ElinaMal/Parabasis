@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gelio-greek-whiteback_0: 4796414846541973698
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
