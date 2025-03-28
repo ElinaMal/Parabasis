@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyPatrol : MonoBehaviour
+public class WalkingEnemyPatrol : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
