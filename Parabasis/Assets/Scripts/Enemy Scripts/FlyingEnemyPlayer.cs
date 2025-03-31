@@ -4,16 +4,19 @@ public class FlyingEnemyPlayer : MonoBehaviour
 {
     public Transform player;
     [SerializeField] private float detectionRange;
-    [SerializeField] private string tagName;
     public FlyingEnemyPatrol enemyPatrol;
     LayerMask mask;
+    RaycastHit2D hit;
     private Rigidbody2D _rb;
+    [SerializeField] private string objectName;
+    [SerializeField] private float velocity;
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         LayerMask layerMask = LayerMask.GetMask("Default");
         mask = layerMask;
+        //hit.collider.gameObject.name = "empty";
     }
 
     // Update is called once per frame
@@ -23,24 +26,20 @@ public class FlyingEnemyPlayer : MonoBehaviour
         Vector2 directionToPlayer = enemyToPlayer.normalized;
         float distance = enemyToPlayer.magnitude;
 
-        Ray ray = new Ray(transform.position, player.position);
+        hit = Physics2D.Raycast(transform.position, directionToPlayer, detectionRange);
 
-        Debug.DrawLine(ray.origin, ray.direction);
-
-        if (Physics.Raycast(ray, out RaycastHit hit, detectionRange))
+        if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange))
         {
-            enemyPatrol.enabled = false;
-
-            if (hit.collider.CompareTag(tagName))
+            if (hit.collider.gameObject.name == objectName && distance < detectionRange)
             {
                 enemyPatrol.enabled = false;
 
-                _rb.linearVelocity = hit.normal;
+                transform.position = Vector2.MoveTowards(transform.position, player.position, velocity);
             }
-        }
-        else
-        {
-            enemyPatrol.enabled = true;
+            else
+            {
+                enemyPatrol.enabled = true;
+            }
         }
     }
 }

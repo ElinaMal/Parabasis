@@ -38,10 +38,12 @@ public class EnemyChasePlayer : MonoBehaviour
             else if (directionToPlayer.x > 0)
             {
                 _rb.linearVelocityX = velocity;
+                transform.rotation = Quaternion.Euler(0, 0, 0);
             }
             else
             {
                 _rb.linearVelocityX = -velocity;
+                transform.rotation = Quaternion.Euler(0, -180, 0);
             }
         }
         else
