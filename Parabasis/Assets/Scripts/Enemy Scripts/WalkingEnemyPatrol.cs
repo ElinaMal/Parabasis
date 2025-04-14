@@ -4,7 +4,7 @@ public class WalkingEnemyPatrol : MonoBehaviour
 {
     public GameObject pointA;
     public GameObject pointB;
-    public Vector2 currentDestination;
+    public Vector3 currentDestination;
     [SerializeField] private float velocity;
 
     private void Awake()
@@ -22,6 +22,18 @@ public class WalkingEnemyPatrol : MonoBehaviour
         if (transform.position.x >= pointB.transform.position.x)
         {
             currentDestination = pointA.transform.position;
+        }
+
+        Vector2 enemyToDestination = currentDestination - transform.position;
+        Vector2 directionToDestination = enemyToDestination.normalized;
+
+        if (directionToDestination.x > 0)
+        {
+            transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+        else
+        {
+            transform.rotation = Quaternion.Euler(0, -180, 0);
         }
 
         transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity);

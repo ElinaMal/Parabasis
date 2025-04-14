@@ -342,7 +342,8 @@ MonoBehaviour:
   currentDestination: {x: 0, y: 0}
   check: {x: 0, y: 0}
   path: {x: 0, y: 0}
-  detectionRange: 1.5
+  detectionRange: 1
+  correctionVelocity: 5
   velocity: 0.01
   radius: 1
 --- !u!1 &519420028
@@ -940,7 +941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1124258978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,7 +956,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointA: {fileID: 621679545}
   pointB: {fileID: 1009696679}
-  currentDestination: {x: 0, y: 0}
+  currentDestination: {x: 0, y: 0, z: 0}
   velocity: 0.01
 --- !u!50 &1124258980
 Rigidbody2D:

@@ -30,11 +30,20 @@ public class FlyingEnemyPlayer : MonoBehaviour
 
         if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange))
         {
-            if (hit.collider.gameObject.name == objectName && distance < detectionRange)
+            if ((hit.collider.gameObject.name == objectName) && (distance < detectionRange))
             {
                 enemyPatrol.enabled = false;
 
                 transform.position = Vector2.MoveTowards(transform.position, player.position, velocity);
+
+                if (directionToPlayer.x > 0)
+                {
+                    transform.rotation = Quaternion.Euler(0, 0, 0);
+                }
+                else
+                {
+                    transform.rotation = Quaternion.Euler(0, -180, 0);
+                }
             }
             else
             {

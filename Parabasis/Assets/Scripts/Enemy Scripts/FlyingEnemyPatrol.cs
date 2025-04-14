@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class FlyingEnemyPatrol : MonoBehaviour
 {
@@ -10,12 +11,16 @@ public class FlyingEnemyPatrol : MonoBehaviour
     public Vector2 check;
     public Vector2 path;
     [SerializeField] private float detectionRange;
+    [SerializeField] private float correctionVelocity;
     [SerializeField] private float velocity;
     [SerializeField] private float radius;
+    private Rigidbody2D _rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        _rb = GetComponent<Rigidbody2D>();
+
         currentDestination = pointB.transform.position;
     }
 
@@ -50,18 +55,26 @@ public class FlyingEnemyPatrol : MonoBehaviour
             float seeX = direction.x;
             float seeY = direction.y;
 
-            if ((seeX == 1 && seeY > 0) || (seeX < 0 && seeY == -1))
+            /*
+            if (seeX < 0 )
             {
-                path = new Vector2(-1, 1);
+                path.x = -seeX;
             }
-            else if ((seeX > 0 && seeY == 1) || (seeX == -1 && seeY < 0))
+            if (seeY < 0)
             {
-                path = new Vector2(1, -1);
+                path.y = -seeY;
             }
-            else if ((seeX < 0 && seeY == 1) || (seeX == 1 && seeY < 0))
+            if (seeX > 0)
             {
-                path = new Vector2(-1, -1);
+                path.x = -seeX;
             }
+            if (seeY > 0)
+            {
+                path.y = -seeY;
+            }
+            */
+
+            _rb.linearVelocity = path * correctionVelocity;
         }
         else
         {
