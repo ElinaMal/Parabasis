@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using Unity.VisualScripting;
 
 public class FlyingEnemyPatrol : MonoBehaviour
 {
@@ -20,7 +21,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     private Rigidbody2D _rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
         trigger = false;
@@ -67,38 +68,14 @@ public class FlyingEnemyPatrol : MonoBehaviour
 
         if (Physics2D.CircleCast(transform.position, radius, direction, 0))
         {
-            //check = target.position - transform.position;
-            //direction = check.normalized;
-
             hit = Physics2D.CircleCast(transform.position, radius, direction, 0);
             check = hit.transform.position - transform.position;
             direction = check.normalized;
-            Debug.DrawRay(transform.position, direction);
 
             float seeX = direction.x;
             float seeY = direction.y;
 
-            /*
-            if (seeX < 0 )
-            {
-                path.x = -seeX;
-            }
-            if (seeY < 0)
-            {
-                path.y = -seeY;
-            }
-            if (seeX > 0)
-            {
-                path.x = -seeX;
-            }
-            if (seeY > 0)
-            {
-                path.y = -seeY;
-            }
-            */
-
-
-            if (seeX > 0 && seeY > 0)
+            if (seeX > 0 && seeY > 0 && !trigger)
             {
                 if (seeY > seeX)
                 {
@@ -109,18 +86,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
                     path = new Vector2(-0.5f, 1);
                 }
             }
-            if (seeX > 0 && seeY < 0)//
-            {
-                if (seeX > -seeY)
-                {
-                    path = new Vector2(-0.5f, 1);
-                }
-                else
-                {
-                    path = new Vector2(1, -0.5f);
-                }
-            }
-            if (seeX < 0 && seeY < 0)
+            else if (seeX < 0 && seeY < 0 && !trigger)
             {
                 if (seeX > seeY)
                 {
@@ -131,15 +97,26 @@ public class FlyingEnemyPatrol : MonoBehaviour
                     path = new Vector2(-0.5f, 1);
                 }
             }
-            if (seeX < 0 && seeY > 0)//
+            else if (seeX < 0 && seeY > 0 && !trigger)
             {
                 if (-seeX > seeY)
                 {
-                    path = new Vector2(-0.5f, 1);
+                    path = new Vector2(0.5f, 1);
                 }
                 else
                 {
                     path = new Vector2(1, -0.5f);
+                }
+            }
+            else if (seeX > 0 && seeY < 0 && !trigger)
+            {
+                if (seeX > -seeY)
+                {
+                    path = new Vector2(-0.5f, -1);
+                }
+                else
+                {
+                    path = new Vector2(1, 0.5f);
                 }
             }
 
@@ -148,6 +125,18 @@ public class FlyingEnemyPatrol : MonoBehaviour
         else
         {
             transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity);
+
+            check = target.position - transform.position;
+            direction = check.normalized;
+
+            if (direction.x > 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else
+            {
+                transform.rotation = Quaternion.Euler(0, -180, 0);
+            }
         }
     }
 
@@ -155,7 +144,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     {
         trigger = true;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.2f);
 
         trigger = false;
     }

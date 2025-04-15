@@ -27,11 +27,12 @@ public class EnemyChasePlayer : MonoBehaviour
         {
             enemyPatrol.enabled = true;
         }
-        else if (distance < detectionRange)
+
+        else if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange))
         {
             enemyPatrol.enabled = false;
 
-            if (directionToPlayer.x == 0)
+            if (transform.position.x + 1 > player.position.x && transform.position.x - 1 < player.position.x)
             {
                 _rb.linearVelocityX = 0;
             }
