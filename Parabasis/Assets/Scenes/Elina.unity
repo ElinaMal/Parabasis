@@ -339,13 +339,15 @@ MonoBehaviour:
   pointB: {fileID: 1342083970}
   pointC: {fileID: 2144759152}
   pointD: {fileID: 1608688433}
+  target: {fileID: 0}
   currentDestination: {x: 0, y: 0}
+  direction: {x: 0, y: 0}
   check: {x: 0, y: 0}
   path: {x: 0, y: 0}
-  detectionRange: 1
   correctionVelocity: 5
   velocity: 0.01
-  radius: 1
+  radius: 2
+  trigger: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,8 +956,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f6a550f039a60241b9b6c3a0944df3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointA: {fileID: 621679545}
-  pointB: {fileID: 1009696679}
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
   currentDestination: {x: 0, y: 0, z: 0}
   velocity: 0.01
 --- !u!50 &1124258980
