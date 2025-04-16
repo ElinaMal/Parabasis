@@ -14,7 +14,7 @@ public class FlyingEnemyPlayer : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        LayerMask layerMask = LayerMask.GetMask("Default");
+        LayerMask layerMask = LayerMask.GetMask("Platform", "Player");
         mask = layerMask;
         //hit.collider.gameObject.name = "empty";
     }
@@ -26,9 +26,9 @@ public class FlyingEnemyPlayer : MonoBehaviour
         Vector2 directionToPlayer = enemyToPlayer.normalized;
         float distance = enemyToPlayer.magnitude;
 
-        hit = Physics2D.Raycast(transform.position, directionToPlayer, detectionRange);
+        hit = Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, mask);
 
-        if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange))
+        if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, mask))
         {
             if ((hit.collider.gameObject.name == objectName) && (distance < detectionRange))
             {

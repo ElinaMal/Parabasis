@@ -8,7 +8,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] public int defense = 1;
 
-    [SerializeField] public GameObject attackArea;
+    //[SerializeField] public GameObject attackArea;
 
     [SerializeField] public bool pierceRes = false;
     [SerializeField] public bool slashRes = false;
@@ -18,19 +18,19 @@ public class Health : MonoBehaviour
     //public bool isBurning = false;
 
     public int burnTicks = 0;
-    public float burnDelta = 0;
+    //public float burnDelta = 0;
     public float burnDamage = 0;
 
     private float finalDamage;
 
 
     
-    public Animator anim;
+    //public Animator anim;
     
 
     public bool isDead = false;
 
-
+    /*
     // Update is called once per frame
     void Update()
     {
@@ -44,7 +44,7 @@ public class Health : MonoBehaviour
             Damage(burnDamage, AN: true);
         }
     }
-
+    */
     public void Damage(float amount, bool Pierce = false, bool Slash = false, bool Blunt = false, bool AN = false, bool Burn = false, int burnAmount = 0, float burnDamage = 0)
     {
         /*
@@ -96,7 +96,7 @@ public class Health : MonoBehaviour
         if (Burn && burnRes == false)
         {
             burnTicks += burnAmount;
-            burnDelta = 1;
+            //burnDelta = 1;
             this.burnDamage = burnDamage;
         }
 
@@ -143,7 +143,7 @@ public class Health : MonoBehaviour
         Debug.Log("I am Dead!");
 
         //anim.ResetTrigger("isHurt");
-        anim.SetBool("isDying", true);
+        //anim.SetBool("isDying", true);
 
         isDead = true;
         gameObject.tag = "Dead";

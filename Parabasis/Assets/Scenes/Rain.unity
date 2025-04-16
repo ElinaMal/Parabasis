@@ -418,17 +418,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!114 &1935619314 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-  m_PrefabInstance: {fileID: 486868983553367885}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff99b95c5fe5b5b43ba47c841bc2266a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &486868983553367885
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -440,46 +429,6 @@ PrefabInstance:
     - target: {fileID: 192666375640810538, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
       propertyPath: m_Name
       value: Hercules
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: dashingTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: dashUnlocked
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: dashingPower
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1935619314}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Dash
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PlayerMovement, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 3264429758120105781, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
-      propertyPath: m_ActionEvents.Array.data[7].m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 5464923859867369867, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
       propertyPath: m_LocalPosition.x
