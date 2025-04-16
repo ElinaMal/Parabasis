@@ -9,7 +9,7 @@ using UnityEditor.SearchService;
 public class LoadingScene : MonoBehaviour
 {
     public GameObject LoadingScreen;
-    public Image LoadingBarFill;
+    public Slider slider;
 
     public void LoadScene(int sceneId)
     {
@@ -26,7 +26,7 @@ public class LoadingScene : MonoBehaviour
         {
             float progressValue = Mathf.Clamp01(operation.progress / 0.9f);
 
-            LoadingBarFill.fillAmount = progressValue;
+            slider.value = progressValue;
 
             yield return null;
         }
