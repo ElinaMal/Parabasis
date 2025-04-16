@@ -6,6 +6,7 @@ public class EnemyChasePlayer : MonoBehaviour
     public Transform player;
     [SerializeField] private float detectionRange;
     [SerializeField] private float velocity;
+    LayerMask mask;
     public GameObject pointA;
     public GameObject pointB;
     public WalkingEnemyPatrol enemyPatrol;
@@ -14,6 +15,8 @@ public class EnemyChasePlayer : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        LayerMask layerMask = LayerMask.GetMask("Platform", "Player");
+        mask = layerMask;
     }
 
     // Update is called once per frame
@@ -28,7 +31,7 @@ public class EnemyChasePlayer : MonoBehaviour
             enemyPatrol.enabled = true;
         }
 
-        else if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange))
+        else if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, mask))
         {
             enemyPatrol.enabled = false;
 

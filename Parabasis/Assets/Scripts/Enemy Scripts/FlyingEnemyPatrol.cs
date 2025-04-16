@@ -10,6 +10,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     public GameObject pointD;
     public Transform target;
     public RaycastHit2D hit;
+    LayerMask mask;
     public Vector2 currentDestination;
     public Vector2 direction;
     public Vector2 check;
@@ -24,6 +25,8 @@ public class FlyingEnemyPatrol : MonoBehaviour
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
+        LayerMask layerMask = LayerMask.GetMask("Platform");
+        mask = layerMask;
         trigger = false;
         currentDestination = pointB.transform.position;
         target = pointB.transform;
@@ -66,9 +69,9 @@ public class FlyingEnemyPatrol : MonoBehaviour
             StopCoroutine(Coroutine());
         }
 
-        if (Physics2D.CircleCast(transform.position, radius, direction, 0))
+        if (Physics2D.CircleCast(transform.position, radius, direction, 0, mask))
         {
-            hit = Physics2D.CircleCast(transform.position, radius, direction, 0);
+            hit = Physics2D.CircleCast(transform.position, radius, direction, 0, mask);
             check = hit.transform.position - transform.position;
             direction = check.normalized;
 
@@ -144,7 +147,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     {
         trigger = true;
 
-        yield return new WaitForSeconds(1.2f);
+        yield return new WaitForSeconds(1);
 
         trigger = false;
     }

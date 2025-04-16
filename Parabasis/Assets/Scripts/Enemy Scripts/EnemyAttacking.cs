@@ -1,16 +1,21 @@
 using System.Threading;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyAttacking : MonoBehaviour
 {
     public RaycastHit2D hit;
+    LayerMask mask;
     public Transform player;
     public bool attacking;
     [SerializeField] private float attackRange;
     [SerializeField] private float timer;
     [SerializeField] private float attackLimit;
+    [SerializeField] private float attackTime;
+    [SerializeField] private float delay;
     [SerializeField] private float damage;
+    [SerializeField] private bool canAttack;
     [SerializeField] private bool Pierce;
     [SerializeField] private bool Slash;
     [SerializeField] private bool Blunt;
@@ -19,10 +24,10 @@ public class EnemyAttacking : MonoBehaviour
     [SerializeField] private int burnAmount;
     [SerializeField] private int burnDamage;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Awake()
     {
-        
+        LayerMask layerMask = LayerMask.GetMask("Platform");
+        mask = layerMask;
     }
 
     // Update is called once per frame
@@ -31,17 +36,22 @@ public class EnemyAttacking : MonoBehaviour
         Vector2 enemyToPlayer = player.position - transform.position;
         Vector2 directionToPlayer = enemyToPlayer.normalized;
 
-        hit = Physics2D.Raycast(transform.position, directionToPlayer, attackRange);
+        hit = Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask);
 
-        if (Physics2D.Raycast(transform.position, directionToPlayer, attackRange))
+        if (Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask))
         {
-            attacking = true;
-        }
-        else
-        {
-            attacking = false;
+            if (hit.collider.GetComponent<Health>() != null && canAttack)
+            {
+                canAttack = false;
+                attackTime = 0;
+                attacking = true;
+
+                Health health = hit.collider.GetComponent<Health>();
+                health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
+            }
         }
 
+        // time for the attack
         if (attacking)
         {
             timer += Time.deltaTime;
@@ -53,13 +63,12 @@ public class EnemyAttacking : MonoBehaviour
             }
         }
 
-        if (attacking)
+        attackTime += Time.deltaTime;
+
+        //cooldown
+        if (attackTime >= delay)
         {
-            if (hit.collider.GetComponent<Health>() != null)
-            {
-                Health health = hit.collider.GetComponent<Health>();
-                health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
-            }
+            canAttack = true;
         }
     }
 }

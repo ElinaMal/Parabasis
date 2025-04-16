@@ -11,10 +11,10 @@ TagManager:
   - Floor
   - Water
   - UI
-  - Post-Process
   - 
-  - 
-  - 
+  - Player
+  - Enemy
+  - Platform
   - 
   - 
   - 
