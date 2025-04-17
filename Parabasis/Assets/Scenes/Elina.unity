@@ -202,6 +202,7 @@ GameObject:
   - component: {fileID: 500980914}
   - component: {fileID: 500980918}
   - component: {fileID: 500980919}
+  - component: {fileID: 500980920}
   m_Layer: 8
   m_Name: FlyingEnemy
   m_TagString: Untagged
@@ -348,6 +349,108 @@ MonoBehaviour:
   velocity: 0.01
   radius: 1.3
   trigger: 0
+--- !u!114 &500980920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500980913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ed9e235b0c351044b8e33299d08483e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 3160051998110086905, guid: aeb0c1342271d5f408582648cfedcae6, type: 3}
+  target: {fileID: 1205127813}
+  shootRate: 2
+  shootTimer: 0
+  projectileMaxHeight: 1
+  distanceToTargetToDestroyProjectile: 0
+  maxMoveSpeed: 6
+  destroyTime: 8
+  damage: 1
+  targetTag: Player
+  trajectoryAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0.00028421063
+      outSlope: 0.00028421063
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1.000207
+      value: 0.00028426945
+      inSlope: 0.00028421063
+      outSlope: 0.00028421063
+      tangentMode: 34
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 1
+    m_RotationOrder: 4
+  axisCorrectionAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  speedAnimationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.14834557
+      outSlope: -0.14834557
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.71543777
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  Pierce: 0
+  Slash: 0
+  Blunt: 0
+  AN: 0
+  Burn: 0
+  burnAmount: 0
+  burnDamage: 0
+  detectionRange: 15
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,7 +1047,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1124258978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1187,7 +1290,7 @@ Transform:
   m_GameObject: {fileID: 1205127811}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.24, y: 4.08, z: 0}
+  m_LocalPosition: {x: -1.49, y: 5.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

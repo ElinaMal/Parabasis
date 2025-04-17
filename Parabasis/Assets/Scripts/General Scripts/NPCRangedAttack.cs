@@ -6,7 +6,7 @@ using UnityEngine;
 public class NPCRangedAttack : MonoBehaviour
 {
     [SerializeField] private GameObject bullet;
-    [SerializeField] private GameObject targetDetectorObject;
+    //[SerializeField] private GameObject targetDetectorObject;
     [SerializeField] private Transform target;
     //[SerializeField] private Animator anim;
 
@@ -32,6 +32,10 @@ public class NPCRangedAttack : MonoBehaviour
     [SerializeField] private int burnAmount;
     [SerializeField] private float burnDamage;
 
+    private Vector3 calc;
+    private float distance;
+    [SerializeField] private float detectionRange;
+
     private void Start()
     {
     }
@@ -39,13 +43,16 @@ public class NPCRangedAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        calc = transform.position - target.position;
+        distance = calc.magnitude;
+
         shootTimer -= Time.deltaTime;
         Shoot();
     }
 
     private void Shoot()
     {
-        if (shootTimer <= 0)
+        if (shootTimer <= 0 && distance <= detectionRange)
         {
             //anim.SetTrigger("Shooting");
             shootTimer = shootRate;
