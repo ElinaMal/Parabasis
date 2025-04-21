@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3264429758120105781}
   - component: {fileID: 6336146762866596327}
   - component: {fileID: 993865051410391003}
+  - component: {fileID: 1802712686709060317}
   m_Layer: 0
   m_Name: Hercules
   m_TagString: Untagged
@@ -245,7 +246,19 @@ MonoBehaviour:
     m_ActionId: 6c2ab1b8-8984-453a-af3d-a3c78ae1679a
     m_ActionName: 'Player/Attack[/Mouse/leftButton,/Keyboard/enter]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1802712686709060317}
+        m_TargetAssemblyTypeName: PlayerBlock, Assembly-CSharp
+        m_MethodName: Block
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: af6f94d5-ee21-48bf-a30d-1ae94b93f582
     m_ActionName: 'Player/Block[/Mouse/rightButton]'
   - m_PersistentCalls:
@@ -370,6 +383,32 @@ MonoBehaviour:
   attackArea: {fileID: 7055224781873181020}
   attackTime: 0.2
   isAttacking: 0
+  canAttack: 1
+--- !u!114 &1802712686709060317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192666375640810538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07e4ffac24ec42a4e8a2be6c8722315a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: {fileID: 6336146762866596327}
+  playerMovement: {fileID: 2039445259783159924}
+  playerMelee: {fileID: 993865051410391003}
+  blockAmount: 1
+  storedDefense: 0
+  slowMoveAmount: 2
+  slowJumpAmount: 2
+  slowdJumpAmount: 2
+  slowDashAmount: 12
+  originalMoveSpeed: 0
+  originalJumpSpeed: 0
+  originaldJumpSpeed: 0
+  originalDashPower: 0
 --- !u!1 &7055224781873181020
 GameObject:
   m_ObjectHideFlags: 0
