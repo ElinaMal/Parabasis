@@ -25,7 +25,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        LayerMask layerMask = LayerMask.GetMask("Platform");
+        LayerMask layerMask = LayerMask.GetMask("Platform", "Floor");
         mask = layerMask;
         trigger = false;
         currentDestination = pointB.transform.position;

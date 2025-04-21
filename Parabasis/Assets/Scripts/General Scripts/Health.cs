@@ -1,7 +1,12 @@
 using UnityEngine;
+using UnityEngine.PlayerLoop;
+using UnityEngine.Rendering.PostProcessing;
+using UnityEngine.Rendering.Universal;
 
 public class Health : MonoBehaviour
 {
+    public GameObject postProcessing;
+
     [SerializeField] public float health = 100;
 
     [SerializeField] private float MAX_HEALTH = 100;
@@ -50,6 +55,16 @@ public class Health : MonoBehaviour
         /*
         anim.SetTrigger("isHurt");
         */
+
+        if (gameObject.CompareTag("Player"))
+        {
+            PostProcessVolume volume = postProcessing.GetComponent<PostProcessVolume>();
+            //volume.GetComponent<ColorAdjustments>();
+        }
+        else
+        {
+
+        }
 
         if (amount < 0)
         {

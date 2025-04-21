@@ -26,7 +26,7 @@ public class EnemyAttacking : MonoBehaviour
 
     private void Awake()
     {
-        LayerMask layerMask = LayerMask.GetMask("Platform");
+        LayerMask layerMask = LayerMask.GetMask("Platform", "Floor");
         mask = layerMask;
     }
 

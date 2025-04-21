@@ -15,7 +15,7 @@ public class EnemyChasePlayer : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        LayerMask layerMask = LayerMask.GetMask("Platform", "Player");
+        LayerMask layerMask = LayerMask.GetMask("Platform", "Player", "Floor");
         mask = layerMask;
     }
 
