@@ -7,10 +7,11 @@ public class PlayerMelee : MonoBehaviour
     public GameObject attackArea;
     public float attackTime = 0.2f;
     public bool isAttacking = false;
+    public bool canAttack = true;
 
     public void Melee(InputAction.CallbackContext context)
     {
-        if (!isAttacking)
+        if (!isAttacking && canAttack)
         {
             StartCoroutine(Melee());
         }
