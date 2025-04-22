@@ -15,7 +15,7 @@ public class EnemyChasePlayer : MonoBehaviour
     private void Awake()
     {
         _rb = GetComponent<Rigidbody2D>();
-        LayerMask layerMask = LayerMask.GetMask("Platform", "Player", "Floor");
+        LayerMask layerMask = LayerMask.GetMask("Player");
         mask = layerMask;
     }
 
@@ -30,7 +30,6 @@ public class EnemyChasePlayer : MonoBehaviour
         {
             enemyPatrol.enabled = true;
         }
-
         else if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, mask))
         {
             enemyPatrol.enabled = false;

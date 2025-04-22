@@ -106,6 +106,7 @@ MonoBehaviour:
   projectileDestroy: {fileID: 710495303018821179}
   force: 50
   maxMoveSpeed: 6
+  targetTag: Player
 --- !u!114 &710495303018821179
 MonoBehaviour:
   m_ObjectHideFlags: 0

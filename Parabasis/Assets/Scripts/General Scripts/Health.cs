@@ -56,16 +56,6 @@ public class Health : MonoBehaviour
         anim.SetTrigger("isHurt");
         */
 
-        if (gameObject.CompareTag("Player"))
-        {
-            PostProcessVolume volume = postProcessing.GetComponent<PostProcessVolume>();
-            //volume.GetComponent<ColorAdjustments>();
-        }
-        else
-        {
-
-        }
-
         if (amount < 0)
         {
             throw new System.ArgumentOutOfRangeException("Cannot Have Negative Damage");

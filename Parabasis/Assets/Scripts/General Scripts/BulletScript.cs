@@ -16,7 +16,7 @@ public class BulletScript : MonoBehaviour
     private float trajectoryMaxRelativeHeight;
     private float distanceToTargetToDestroyProjectile;
     private float damage;
-    private string targetTag;
+    public string targetTag;
 
     private AnimationCurve trajectoryAnimationCurve;
     private AnimationCurve axisCorrectionAnimationCurve;
