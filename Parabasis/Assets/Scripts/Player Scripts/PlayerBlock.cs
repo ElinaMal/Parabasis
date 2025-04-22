@@ -34,6 +34,7 @@ public class PlayerBlock : MonoBehaviour
             playerMovement.dJumpSpeed = slowdJumpAmount;
             playerMovement.dashingPower = slowDashAmount;
             playerMelee.canAttack = false;
+            playerMelee.canStun = false;
             health.defense = blockAmount;
         }
 
@@ -45,6 +46,7 @@ public class PlayerBlock : MonoBehaviour
             playerMovement.dJumpSpeed = originaldJumpSpeed;
             playerMovement.dashingPower = originalDashPower;
             playerMelee.canAttack = true;
+            playerMelee.canStun = true;
         }
     }
 }

@@ -18,9 +18,9 @@ public class CameraFunctions : MonoBehaviour
 
         Transform child = gameObject.transform.GetChild(0);
 
-        if (child.position.x < transform.position.x - 21)
+        if (child.position.x < transform.position.x - 42)
         {
-            Instantiate(preFab, new Vector3(child.position.x + 42, child.position.y, 0), Quaternion.identity, transform);
+            Instantiate(preFab, new Vector3(child.position.x + 84, child.position.y, 0), Quaternion.identity, transform);
             Destroy(child.gameObject);
         }
     }
