@@ -430,6 +430,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hercules
       objectReference: {fileID: 0}
+    - target: {fileID: 993865051410391003, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
+      propertyPath: stunUnlocked
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5464923859867369867, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.1335799
