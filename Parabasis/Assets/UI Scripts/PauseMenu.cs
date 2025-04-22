@@ -1,17 +1,21 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
+using System.Collections.Generic;
+
 
 public class PauseMenu : MonoBehaviour
 {
     [SerializeField] GameObject pauseMenu;
-   
-
+    
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
     }
-
+     
+  
+    
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
