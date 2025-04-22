@@ -16,7 +16,6 @@ public class FlyingEnemyPlayer : MonoBehaviour
         _rb = GetComponent<Rigidbody2D>();
         LayerMask layerMask = LayerMask.GetMask("Platform", "Player", "Floor");
         mask = layerMask;
-        //hit.collider.gameObject.name = "empty";
     }
 
     // Update is called once per frame
