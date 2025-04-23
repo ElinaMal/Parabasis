@@ -6,10 +6,13 @@ public class Stunning : MonoBehaviour
     [SerializeField] private float stunTime;
     private bool wait;
 
-    public void Stunned()
+    private void Awake()
     {
-        StartCoroutine(Coroutine());
+        wait = false;
+    }
 
+    private void Update()
+    {
         if (wait)
         {
             if (gameObject.GetComponent<NPCRangedAttack>() != null)
@@ -39,7 +42,7 @@ public class Stunning : MonoBehaviour
             }
             if (gameObject.GetComponent<WalkingEnemyPatrol>() != null)
             {
-                WalkingEnemyPatrol walkingEnemyPatrol = gameObject.GetComponent <WalkingEnemyPatrol>();
+                WalkingEnemyPatrol walkingEnemyPatrol = gameObject.GetComponent<WalkingEnemyPatrol>();
                 walkingEnemyPatrol.enabled = false;
             }
         }
@@ -75,9 +78,12 @@ public class Stunning : MonoBehaviour
                 WalkingEnemyPatrol walkingEnemyPatrol = gameObject.GetComponent<WalkingEnemyPatrol>();
                 walkingEnemyPatrol.enabled = true;
             }
-
-            StopCoroutine(Coroutine());
         }
+    }
+
+    public void Stunned()
+    {
+        StartCoroutine(Coroutine());
     }
 
     IEnumerator Coroutine()
