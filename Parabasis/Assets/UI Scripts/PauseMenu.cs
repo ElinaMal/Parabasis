@@ -6,12 +6,18 @@ using System.Collections.Generic;
 
 public class PauseMenu : MonoBehaviour
 {
-    [SerializeField] GameObject pauseMenu;
+   
     
+    [SerializeField] GameObject pauseMenu;
+
+    
+    
+
     public void Pause()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
+        
     }
      
   
