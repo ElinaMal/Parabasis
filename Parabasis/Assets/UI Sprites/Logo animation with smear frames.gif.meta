@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Logo animation with smear frames_0: 7520513280188061969
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
