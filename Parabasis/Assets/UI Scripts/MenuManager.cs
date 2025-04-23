@@ -1,4 +1,4 @@
-using Unity.VisualScripting.Antlr3.Runtime;
+
 using UnityEngine;
 
 public class MenuManager : MonoBehaviour
@@ -8,7 +8,7 @@ public class MenuManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
