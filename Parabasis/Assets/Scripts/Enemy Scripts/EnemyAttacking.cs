@@ -38,7 +38,7 @@ public class EnemyAttacking : MonoBehaviour
 
         hit = Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask);
 
-        if (player.position.y < transform.position.y + 0.5f && Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask))
+        if (player.position.y < transform.position.y + 1f && Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask))
         {
             if (hit.collider.GetComponent<Health>() != null && canAttack)
             {

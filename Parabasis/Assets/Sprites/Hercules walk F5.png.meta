@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 3d8effd30df11d7419fc3cc246facf0b
+guid: 3ef3e890be3edc14a9fb3108baec32e7
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 8905396971575767906
-    second: IMG_0555 (4)_0
+      213: -1717831605546626501
+    second: Hercules walk F5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -74,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -126,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IMG_0555 (4)_0
+      name: Hercules walk F5_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 2048
-        height: 2048
+        x: 225
+        y: 96
+        width: 282
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 263fc92ec53569b70800000000000000
-      internalID: 8905396971575767906
+      spriteID: b32547791490928e0800000000000000
+      internalID: -1717831605546626501
       vertices: []
       indices: 
       edges: []
@@ -161,7 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      IMG_0555 (4)_0: 8905396971575767906
+      Hercules walk F5_0: -1717831605546626501
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

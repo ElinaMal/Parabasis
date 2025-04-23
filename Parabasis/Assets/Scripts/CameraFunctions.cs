@@ -11,10 +11,13 @@ public class CameraFunctions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector3 targetPosition = target.position + offset;
-        targetPosition.z = transform.position.z;
-        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref
-        vel, damping);
+        if (!gameObject.CompareTag("MainCamera"))
+        {
+            Vector3 targetPosition = target.position + offset;
+            targetPosition.z = transform.position.z;
+            transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref
+            vel, damping);
+        }
 
         Transform child = gameObject.transform.GetChild(0);
 
