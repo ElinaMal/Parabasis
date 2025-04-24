@@ -3,6 +3,7 @@ using UnityEngine;
 public class FlyingEnemyPlayer : MonoBehaviour
 {
     public Transform player;
+    public Transform initialPosition;
     [SerializeField] private float detectionRange;
     public FlyingEnemyPatrol enemyPatrol;
     LayerMask mask;
@@ -10,6 +11,7 @@ public class FlyingEnemyPlayer : MonoBehaviour
     private Rigidbody2D _rb;
     [SerializeField] private string objectName;
     [SerializeField] private float velocity;
+    [SerializeField] private float setLimit;
 
     private void Awake()
     {
@@ -21,6 +23,9 @@ public class FlyingEnemyPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Vector2 tracker = transform.position - initialPosition.position;
+        float limit = tracker.magnitude;
+
         Vector2 enemyToPlayer = player.position - transform.position;
         Vector2 directionToPlayer = enemyToPlayer.normalized;
         float distance = enemyToPlayer.magnitude;
@@ -29,7 +34,7 @@ public class FlyingEnemyPlayer : MonoBehaviour
 
         if (Physics2D.Raycast(transform.position, directionToPlayer, detectionRange, mask))
         {
-            if ((hit.collider.gameObject.name == objectName) && (distance < detectionRange))
+            if ((hit.collider.gameObject.name == objectName) && (distance < detectionRange) && (limit < setLimit))
             {
                 enemyPatrol.enabled = false;
 

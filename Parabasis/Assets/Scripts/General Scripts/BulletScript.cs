@@ -188,10 +188,6 @@ public class BulletScript : MonoBehaviour
             health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
             Destroy(gameObject);
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     // Update is called once per frame
