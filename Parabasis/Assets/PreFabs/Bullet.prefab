@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -5827196367371185599}
   - component: {fileID: -1830380071150041792}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Bullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -387686595
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileDestroy: {fileID: 710495303018821179}
-  force: 50
+  force: 100
   maxMoveSpeed: 6
   targetTag: Player
 --- !u!114 &710495303018821179
