@@ -145,8 +145,8 @@ Transform:
   m_GameObject: {fileID: 24246696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.04, y: 0.55, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 3.29, z: 0}
+  m_LocalScale: {x: 1, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 457452983}
@@ -194,7 +194,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 695e570d66dbd3842b0b392b33a0a472, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1158,7 +1158,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457452980}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 539af46e769f240478f03be927f95475, type: 3}
   m_Name: 
@@ -1230,13 +1230,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 457452980}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.18826675, y: 0, z: 10}
   m_LocalScale: {x: 2.2, y: 2.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 24246697}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 519420032}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &461027663
 GameObject:
@@ -1424,7 +1424,7 @@ MonoBehaviour:
   detectionRange: 12
   enemyPatrol: {fileID: 500980919}
   objectName: Hercules
-  velocity: 0.015
+  velocity: 0.008
   setLimit: 16
 --- !u!114 &500980919
 MonoBehaviour:
@@ -1671,12 +1671,13 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18826675, y: 0.000000059604645, z: -10}
+  m_LocalPosition: {x: 0.18826675, y: 2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1425426498}
   - {fileID: 1821654421}
+  - {fileID: 457452983}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
@@ -4803,6 +4804,10 @@ PrefabInstance:
       value: -0.0121
       objectReference: {fileID: 0}
     - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1679614448}
+    - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
       propertyPath: jumpSpeed
       value: 12
       objectReference: {fileID: 0}
@@ -5172,7 +5177,7 @@ Transform:
   m_GameObject: {fileID: 1612467076}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 2, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5202,7 +5207,7 @@ MonoBehaviour:
       Size: {x: 0.8, y: 0.8}
       Offset: {x: 0, y: 0}
   CenterOnActivate: 1
-  TargetOffset: {x: 0, y: 0, z: 0}
+  TargetOffset: {x: 0, y: 2, z: 0}
   Damping: {x: 2, y: 2, z: 2}
   Lookahead:
     Enabled: 0
@@ -5358,6 +5363,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5464923859867369867, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
   m_PrefabInstance: {fileID: 1383138405}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &1679614448 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 776416994703826955, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
+  m_PrefabInstance: {fileID: 1383138405}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779648625
 GameObject:
   m_ObjectHideFlags: 0
@@ -5503,6 +5513,18 @@ PrefabInstance:
     - target: {fileID: 2138605521176794951, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_Name
       value: Parallax Clouds1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.x
@@ -6009,6 +6031,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Parallax Clouds
       objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -6076,7 +6110,6 @@ SceneRoots:
   - {fileID: 1612467079}
   - {fileID: 1233982590}
   - {fileID: 519420032}
-  - {fileID: 457452983}
   - {fileID: 1383138405}
   - {fileID: 1124258982}
   - {fileID: 1174012905}
