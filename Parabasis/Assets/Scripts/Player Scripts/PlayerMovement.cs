@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     public float movementSpeed = 5;
     public float jumpSpeed = 5f;
     public float dJumpSpeed = 5f;
+    public Animator anim;
     private Rigidbody2D rb;
     private Vector2 _moveDirection;
     public float gravityScale = 5f;
@@ -24,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
     public bool dashUnlocked;
     private bool canDash;
     private bool isDashing;
+    public bool isWalking;
+    public bool moveHorizontal;
     //private bool dashReady = true;
     public float dashingPower = 24f;
     public float dashingTime = 0.2f;
@@ -53,6 +56,23 @@ public class PlayerMovement : MonoBehaviour
             Vector2 movementVector = ctx.ReadValue<Vector2>();
 
             movementX = movementVector.x;
+
+            moveHorizontal = true;
+
+            if (IsGrounded())
+            {
+                isWalking = true;
+            }
+            else
+            {
+                isWalking = false;
+            }
+        }
+
+        if (ctx.ReadValue<Vector2>().x == 0)
+        {
+            isWalking = false;
+            moveHorizontal = false;
         }
     }
 
@@ -81,6 +101,18 @@ public class PlayerMovement : MonoBehaviour
         {
             canDash = true;
         }
+
+        if (!IsGrounded())
+        {
+            isWalking = false;
+        }
+
+        if (IsGrounded() && moveHorizontal)
+        {
+            isWalking = true;
+        }
+
+        anim.SetBool("isWalking", isWalking);
     }
 
     public void Jump(InputAction.CallbackContext ctx)
