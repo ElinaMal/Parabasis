@@ -12,6 +12,7 @@ public class FlyingEnemyPlayer : MonoBehaviour
     [SerializeField] private string objectName;
     [SerializeField] private float velocity;
     [SerializeField] private float setLimit;
+    private Vector2 enemyToPlayer;
 
     private void Awake()
     {
@@ -26,7 +27,11 @@ public class FlyingEnemyPlayer : MonoBehaviour
         Vector2 tracker = transform.position - initialPosition.position;
         float limit = tracker.magnitude;
 
-        Vector2 enemyToPlayer = player.position - transform.position;
+        if (player != null)
+        {
+            enemyToPlayer = player.position - transform.position;
+        }
+        
         Vector2 directionToPlayer = enemyToPlayer.normalized;
         float distance = enemyToPlayer.magnitude;
 
