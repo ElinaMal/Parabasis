@@ -23,6 +23,7 @@ public class EnemyAttacking : MonoBehaviour
     [SerializeField] private bool Burn;
     [SerializeField] private int burnAmount;
     [SerializeField] private int burnDamage;
+    private Vector2 enemyToPlayer;
 
     private void Awake()
     {
@@ -33,21 +34,28 @@ public class EnemyAttacking : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 enemyToPlayer = player.position - transform.position;
+        if (player != null)
+        {
+            enemyToPlayer = player.position - transform.position;
+        }
+        
         Vector2 directionToPlayer = enemyToPlayer.normalized;
 
         hit = Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask);
 
-        if (player.position.y < transform.position.y + 1f && Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask))
+        if (player != null)
         {
-            if (hit.collider.GetComponent<Health>() != null && canAttack)
+            if (player.position.y < transform.position.y + 1f && Physics2D.Raycast(transform.position, directionToPlayer, attackRange, mask))
             {
-                canAttack = false;
-                attackTime = 0;
-                attacking = true;
+                if (hit.collider.GetComponent<Health>() != null && canAttack)
+                {
+                    canAttack = false;
+                    attackTime = 0;
+                    attacking = true;
 
-                Health health = hit.collider.GetComponent<Health>();
-                health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
+                    Health health = hit.collider.GetComponent<Health>();
+                    health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
+                }
             }
         }
 

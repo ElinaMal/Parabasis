@@ -11,6 +11,7 @@ public class EnemyChasePlayer : MonoBehaviour
     public GameObject pointB;
     public WalkingEnemyPatrol enemyPatrol;
     private Rigidbody2D _rb;
+    private Vector2 enemyToPlayer;
 
     private void Awake()
     {
@@ -22,7 +23,11 @@ public class EnemyChasePlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 enemyToPlayer = player.position - transform.position;
+        if (player != null)
+        {
+            enemyToPlayer = player.position - transform.position;
+        }
+        
         Vector2 directionToPlayer = enemyToPlayer.normalized;
         float distance = enemyToPlayer.magnitude;
 
