@@ -43,8 +43,11 @@ public class NPCRangedAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        calc = transform.position - target.position;
-        distance = calc.magnitude;
+        if (target != null)
+        {
+            calc = transform.position - target.position;
+            distance = calc.magnitude;
+        }
 
         shootTimer -= Time.deltaTime;
         Shoot();

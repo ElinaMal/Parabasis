@@ -151,7 +151,7 @@ public class Health : MonoBehaviour
         //anim.SetBool("isDying", true);
 
         isDead = true;
-        gameObject.tag = "Dead";
+        //gameObject.tag = "Dead";
 
         if (GetComponent<BoxCollider2D>() != null)
         {
@@ -161,5 +161,7 @@ public class Health : MonoBehaviour
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
         }
+
+        Destroy(gameObject);
     }
 }
