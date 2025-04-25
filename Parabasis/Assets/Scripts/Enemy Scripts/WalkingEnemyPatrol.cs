@@ -36,6 +36,6 @@ public class WalkingEnemyPatrol : MonoBehaviour
             transform.rotation = Quaternion.Euler(0, -180, 0);
         }
 
-        transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity);
+        transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity * Time.deltaTime);
     }
 }

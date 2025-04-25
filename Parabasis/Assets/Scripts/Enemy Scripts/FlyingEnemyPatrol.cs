@@ -127,7 +127,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
         }
         else
         {
-            transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity);
+            transform.position = Vector2.MoveTowards(transform.position, currentDestination, velocity * Time.deltaTime);
 
             check = target.position - transform.position;
             direction = check.normalized;

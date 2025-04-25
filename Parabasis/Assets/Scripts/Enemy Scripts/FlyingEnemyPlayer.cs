@@ -38,7 +38,7 @@ public class FlyingEnemyPlayer : MonoBehaviour
             {
                 enemyPatrol.enabled = false;
 
-                transform.position = Vector2.MoveTowards(transform.position, player.position, velocity);
+                transform.position = Vector2.MoveTowards(transform.position, player.position, velocity * Time.deltaTime);
 
                 if (directionToPlayer.x > 0)
                 {
