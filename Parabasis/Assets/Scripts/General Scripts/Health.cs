@@ -171,6 +171,13 @@ public class Health : MonoBehaviour
             GetComponent<CapsuleCollider2D>().enabled = false;
         }
 
-        Destroy(gameObject);
+        if (gameObject.name == "Hercules")
+        {
+
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }
