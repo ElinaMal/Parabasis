@@ -28,6 +28,10 @@ public class Health : MonoBehaviour
 
     private float finalDamage;
 
+    public Knockback knockback;
+
+    public PlayerMovement playerMovement;
+
 
     
     //public Animator anim;
@@ -50,7 +54,7 @@ public class Health : MonoBehaviour
         }
     }
     */
-    public void Damage(float amount, bool Pierce = false, bool Slash = false, bool Blunt = false, bool AN = false, bool Burn = false, int burnAmount = 0, float burnDamage = 0)
+    public void Damage(float amount, Vector2 hitDirection, bool Pierce = false, bool Slash = false, bool Blunt = false, bool AN = false, bool Burn = false, int burnAmount = 0, float burnDamage = 0)
     {
         /*
         anim.SetTrigger("isHurt");
@@ -115,6 +119,11 @@ public class Health : MonoBehaviour
         {
             Die();
         }
+
+        if (knockback != null)
+        {
+            knockback.CallKnockback(hitDirection, Vector2.up, playerMovement.movementX);
+        }
     }
 
     public void Burning(int burnAmount)
@@ -122,7 +131,7 @@ public class Health : MonoBehaviour
         Debug.Log("I am on fire!");
         for (int i = 0; i < burnAmount; i++)
         {
-            Damage(1, AN: true);
+            Damage(1, new Vector2 (0, 0), AN: true);
         }
     }
 
