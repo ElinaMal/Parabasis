@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
 
     [SerializeField] public float health = 100;
 
-    [SerializeField] private float MAX_HEALTH = 100;
+    [SerializeField] public float MAX_HEALTH = 100;
 
     [SerializeField] public int defense = 1;
 
