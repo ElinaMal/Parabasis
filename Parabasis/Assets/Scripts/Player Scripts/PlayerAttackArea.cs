@@ -14,10 +14,13 @@ public class PlayerAttackArea : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
+        Vector2 projectileToTarget = transform.position - collider.transform.position;
+        Vector2 directionToImpact = projectileToTarget.normalized;
+
         if (collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
-            health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
+            health.Damage(damage, directionToImpact, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
         }
     }
 }

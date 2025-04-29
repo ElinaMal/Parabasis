@@ -54,7 +54,7 @@ public class EnemyAttacking : MonoBehaviour
                     attacking = true;
 
                     Health health = hit.collider.GetComponent<Health>();
-                    health.Damage(damage, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
+                    health.Damage(damage, directionToPlayer, Pierce, Slash, Blunt, AN, Burn, burnAmount, burnDamage);
                 }
             }
         }

@@ -18,7 +18,8 @@ GameObject:
   - component: {fileID: 993865051410391003}
   - component: {fileID: 1802712686709060317}
   - component: {fileID: 776416994703826955}
-  m_Layer: 0
+  - component: {fileID: 4935061833725961232}
+  m_Layer: 7
   m_Name: Hercules
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,13 +177,18 @@ MonoBehaviour:
   movementSpeed: 10
   jumpSpeed: 15
   dJumpSpeed: 20
+  anim: {fileID: 776416994703826955}
   gravityScale: 5
   fallingGravityScale: 10
+  movementX: 0
   readyJump: 0
   jumpUnlocked: 1
   dashUnlocked: 1
+  isWalking: 0
+  moveHorizontal: 0
   dashingPower: 40
   dashingTime: 0.2
+  knockback: {fileID: 4935061833725961232}
   Floor:
     serializedVersion: 2
     m_Bits: 8
@@ -382,6 +388,8 @@ MonoBehaviour:
   burnRes: 0
   burnTicks: 0
   burnDamage: 0
+  knockback: {fileID: 4935061833725961232}
+  playerMovement: {fileID: 2039445259783159924}
   isDead: 0
 --- !u!114 &993865051410391003
 MonoBehaviour:
@@ -452,6 +460,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4935061833725961232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192666375640810538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4976dd9d0fa0ab144a2a079f331594b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  knockbackTime: 0.2
+  hitDirectionForce: 10
+  constForce: 5
+  inputForce: 7.5
 --- !u!1 &2659248953816155236
 GameObject:
   m_ObjectHideFlags: 0

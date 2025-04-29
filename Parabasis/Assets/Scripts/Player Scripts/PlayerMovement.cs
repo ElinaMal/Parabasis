@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     private float currentGravityScale;
     private bool isFacingRight = true;
 
-    private float movementX;
+    public float movementX;
     private float movementY;
 
     public bool readyJump;
@@ -31,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
     public float dashingPower = 24f;
     public float dashingTime = 0.2f;
     //private float dashingCooldown = 1f;
+
+    public Knockback knockback;
 
     public LayerMask Floor;
 
@@ -117,12 +119,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext ctx)
     {
-        if (!isDashing && IsGrounded() && ctx.ReadValue<float>() == 1)
+        if (!isDashing && !knockback.IsBeingKnockedBack && IsGrounded() && ctx.ReadValue<float>() == 1)
         {
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
         }
 
-        if (!isDashing && readyJump && IsGrounded() == false && ctx.ReadValue<float>() == 1)
+        if (!isDashing && readyJump && !knockback.IsBeingKnockedBack && IsGrounded() == false && ctx.ReadValue<float>() == 1)
         {
             rb.linearVelocityY = 0;
             rb.AddForce(Vector2.up * dJumpSpeed, ForceMode2D.Impulse);
@@ -132,7 +134,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Dash(InputAction.CallbackContext ctx)
     {
-        if (canDash && !isDashing)
+        if (canDash && !isDashing && !knockback.IsBeingKnockedBack)
         {
             StartCoroutine(Dash());
         }
@@ -173,7 +175,10 @@ public class PlayerMovement : MonoBehaviour
         {
             return;
         }
-        rb.linearVelocityX = (movementX * movementSpeed);
-        rb.AddForce(Physics2D.gravity * (currentGravityScale - 1) * rb.mass);
+        if (!knockback.IsBeingKnockedBack)
+        {
+            rb.linearVelocityX = (movementX * movementSpeed);
+            rb.AddForce(Physics2D.gravity * (currentGravityScale - 1) * rb.mass);
+        }
     }
 }
