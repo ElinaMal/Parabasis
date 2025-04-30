@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Hercules concept art_0: -8002546424082833915
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
