@@ -36,9 +36,10 @@ public class ObjectsFunctions : MonoBehaviour
             }
             else if (gameObject.name == "thorns")
             {
+                Health health = collision.GetComponent<Health>();
+                health.health = 0;
                 Destroy(collision.gameObject);
             }
-            
         }
     }
 }
