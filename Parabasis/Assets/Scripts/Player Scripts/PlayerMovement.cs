@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public SoundEffects audioManager;
     public float movementSpeed = 5;
     public float jumpSpeed = 5f;
     public float dJumpSpeed = 5f;
@@ -39,6 +40,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundEffects>();
     }
 
     private void Start()
@@ -122,12 +124,14 @@ public class PlayerMovement : MonoBehaviour
         if (!isDashing && !knockback.IsBeingKnockedBack && IsGrounded() && ctx.ReadValue<float>() == 1)
         {
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
+            audioManager.PlaySoundEffect(audioManager.jumpSound);
         }
 
         if (!isDashing && readyJump && !knockback.IsBeingKnockedBack && IsGrounded() == false && ctx.ReadValue<float>() == 1)
         {
             rb.linearVelocityY = 0;
             rb.AddForce(Vector2.up * dJumpSpeed, ForceMode2D.Impulse);
+            audioManager.PlaySoundEffect(audioManager.jumpSound);
             readyJump = false;
         }
     }
@@ -137,6 +141,7 @@ public class PlayerMovement : MonoBehaviour
         if (canDash && !isDashing && !knockback.IsBeingKnockedBack)
         {
             StartCoroutine(Dash());
+            audioManager.PlaySoundEffect(audioManager.dashingSound);
         }
     }
 
