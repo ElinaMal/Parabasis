@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 5386516939777707529}
   - component: {fileID: 1584664967750433556}
   - component: {fileID: 2760076425159697252}
+  - component: {fileID: 5676085221878129855}
+  - component: {fileID: 603592729518725926}
   m_Layer: 8
   m_Name: FlyingEnemy
   m_TagString: Enemy
@@ -82,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: -387686595
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -8674034335363756155, guid: bed97d2c57328d3439a2af79c0803fea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -178,6 +180,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   attacking: 0
+  anim: {fileID: 5676085221878129855}
   attackRange: 1
   timer: 0
   attackLimit: 0.5
@@ -229,8 +232,8 @@ BoxCollider2D:
   m_Offset: {x: -0.00774315, y: 0.12617819}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.54, y: 2.714551}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -251,3 +254,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   stunTime: 4
+--- !u!95 &5676085221878129855
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632671241827811730}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d15681623e2d71d48b300949bf05447d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &603592729518725926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6632671241827811730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  health: 3
+  MAX_HEALTH: 3
+  defense: 0
+  pierceRes: 0
+  slashRes: 0
+  bluntRes: 0
+  burnRes: 0
+  burnTicks: 0
+  burnDamage: 0
+  knockback: {fileID: 0}
+  playerMovement: {fileID: 0}
+  isDead: 0

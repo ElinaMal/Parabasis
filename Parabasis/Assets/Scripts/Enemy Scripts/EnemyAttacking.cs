@@ -9,6 +9,7 @@ public class EnemyAttacking : MonoBehaviour
     LayerMask mask;
     public Transform player;
     public bool attacking;
+    public Animator anim;
     [SerializeField] private float attackRange;
     [SerializeField] private float timer;
     [SerializeField] private float attackLimit;
@@ -49,6 +50,7 @@ public class EnemyAttacking : MonoBehaviour
             {
                 if (hit.collider.GetComponent<Health>() != null && canAttack)
                 {
+                    anim.SetBool("isAttacking", true);
                     canAttack = false;
                     attackTime = 0;
                     attacking = true;
