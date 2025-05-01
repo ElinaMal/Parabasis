@@ -13,7 +13,7 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
-    // Use this for initialization
+    // Use this for initialization 
     void Start()
     {
         sentences = new Queue<string>();
@@ -47,7 +47,7 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(sentence));
     }
-
+    // Kind of animation for the text
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
