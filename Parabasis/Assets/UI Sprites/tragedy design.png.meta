@@ -185,7 +185,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tragedy design_0: 8482373506845735611
+      tragedy design_1: -9042227772787610064
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
