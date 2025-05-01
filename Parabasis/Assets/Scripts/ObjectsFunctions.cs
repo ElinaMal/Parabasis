@@ -13,8 +13,8 @@ public class ObjectsFunctions : MonoBehaviour
                 if (health.health < health.MAX_HEALTH)
                 {
                     health.Heal(1);
+                    Destroy(gameObject);
                 }
-                Destroy(gameObject);
             }
             else if (gameObject.name == "JumpMask")
             {
