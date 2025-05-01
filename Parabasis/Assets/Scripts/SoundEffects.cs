@@ -13,18 +13,6 @@ public class SoundEffects : MonoBehaviour
     public AudioClip stunSound;
     public AudioClip landingSound;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PlaySoundEffect(AudioClip clip)
     {
         soundEffectsSourse.PlayOneShot(clip);

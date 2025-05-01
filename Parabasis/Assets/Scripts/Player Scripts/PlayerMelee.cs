@@ -14,12 +14,19 @@ public class PlayerMelee : MonoBehaviour
     public bool canStun = true;
     public bool stunUnlocked = false;
     public bool stunReady = true;
+    public SoundEffects audioManager;
+
+    void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundEffects>();
+    }
 
     public void Melee(InputAction.CallbackContext context)
     {
         if (!isAttacking && canAttack)
         {
             StartCoroutine(Melee());
+            audioManager.PlaySoundEffect(audioManager.attackSound);
         }
     }
 
@@ -30,6 +37,7 @@ public class PlayerMelee : MonoBehaviour
             stunReady = false;
             StartCoroutine (Stun());
             StartCoroutine (StunCooldown());
+            audioManager.PlaySoundEffect(audioManager.stunSound);
         }
     }
 

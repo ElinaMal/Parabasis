@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class Health : MonoBehaviour
 {
-    public GameObject postProcessing;
+    public SoundEffects audioManager;
 
     [SerializeField] public float health = 100;
 
@@ -54,6 +54,12 @@ public class Health : MonoBehaviour
         }
     }
     */
+
+    void Awake()
+    {
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundEffects>();
+    }
+
     public void Damage(float amount, Vector2 hitDirection, bool Pierce = false, bool Slash = false, bool Blunt = false, bool AN = false, bool Burn = false, int burnAmount = 0, float burnDamage = 0)
     {
         /*
@@ -100,6 +106,11 @@ public class Health : MonoBehaviour
         if (finalDamage - defense <= 0)
         {
             Debug.Log("Armor fully negated damage");
+            audioManager.PlaySoundEffect(audioManager.blockSound);
+        }
+        else
+        {
+            audioManager.PlaySoundEffect(audioManager.damageSound);
         }
 
         if (Burn && burnRes == false)
