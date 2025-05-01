@@ -16,7 +16,9 @@ public class MonsterMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[0].position, moveSpeed * Time.deltaTime);
             if (Vector2.Distance(transform.position, patrolPoints[0].position) < .2f)
             {
-                transform.localScale = new Vector3(1, 1, 1);
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
                 patrolDestination = 1;
             }
         }
@@ -25,7 +27,9 @@ public class MonsterMovement : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[1].position, moveSpeed * Time.deltaTime);
             if (Vector2.Distance(transform.position, patrolPoints[1].position) < .2f)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                Vector3 localScale = transform.localScale;
+                localScale.x *= -1f;
+                transform.localScale = localScale;
                 patrolDestination = 0;
             }
         }
