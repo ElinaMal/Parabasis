@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 1802712686709060317}
   - component: {fileID: 776416994703826955}
   - component: {fileID: 4935061833725961232}
+  - component: {fileID: 2920982001924819070}
   m_Layer: 7
   m_Name: Hercules
   m_TagString: Untagged
@@ -174,6 +175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff99b95c5fe5b5b43ba47c841bc2266a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   movementSpeed: 10
   jumpSpeed: 15
   dJumpSpeed: 20
@@ -378,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  postProcessing: {fileID: 0}
+  audioManager: {fileID: 0}
   health: 5
   MAX_HEALTH: 5
   defense: 0
@@ -413,6 +415,7 @@ MonoBehaviour:
   canStun: 1
   stunUnlocked: 1
   stunReady: 1
+  audioManager: {fileID: 0}
 --- !u!114 &1802712686709060317
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -476,6 +479,19 @@ MonoBehaviour:
   hitDirectionForce: 10
   constForce: 5
   inputForce: 7.5
+--- !u!114 &2920982001924819070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192666375640810538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c47a003f8347a34b9baa443edb404c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 2536990681335274731, guid: b9879e75eb64a3145b65d94d19036742, type: 3}
 --- !u!1 &2659248953816155236
 GameObject:
   m_ObjectHideFlags: 0

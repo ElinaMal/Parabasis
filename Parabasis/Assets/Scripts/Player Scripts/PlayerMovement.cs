@@ -141,7 +141,6 @@ public class PlayerMovement : MonoBehaviour
         if (canDash && !isDashing && !knockback.IsBeingKnockedBack)
         {
             StartCoroutine(Dash());
-            audioManager.PlaySoundEffect(audioManager.dashingSound);
         }
     }
 

@@ -12,7 +12,9 @@ public class Landing : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        LayerMask layerMask = LayerMask.GetMask("Floor");
+
+        if (Physics2D.Raycast(transform.position, Vector2.down, 1.5f, layerMask))
         {
             audioManager.PlaySoundEffect(audioManager.landingSound);
         }
