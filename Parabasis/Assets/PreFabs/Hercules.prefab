@@ -380,7 +380,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 2536990681335274731, guid: b9879e75eb64a3145b65d94d19036742, type: 3}
   health: 5
   MAX_HEALTH: 5
   defense: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
   canStun: 1
   stunUnlocked: 1
   stunReady: 1
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 2536990681335274731, guid: b9879e75eb64a3145b65d94d19036742, type: 3}
 --- !u!114 &1802712686709060317
 MonoBehaviour:
   m_ObjectHideFlags: 0
