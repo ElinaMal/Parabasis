@@ -207,7 +207,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  postProcessing: {fileID: 0}
+  audioManager: {fileID: 2536990681335274731, guid: b9879e75eb64a3145b65d94d19036742, type: 3}
   health: 5
   MAX_HEALTH: 5
   defense: 0
@@ -217,6 +217,8 @@ MonoBehaviour:
   burnRes: 0
   burnTicks: 0
   burnDamage: 0
+  knockback: {fileID: 0}
+  playerMovement: {fileID: 0}
   isDead: 0
 --- !u!114 &7895358150227613705
 MonoBehaviour:
@@ -231,7 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 3160051998110086905, guid: aeb0c1342271d5f408582648cfedcae6, type: 3}
-  target: {fileID: 0}
+  target: {fileID: 5464923859867369867, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
   shootRate: 2
   shootTimer: 0
   projectileMaxHeight: 1
