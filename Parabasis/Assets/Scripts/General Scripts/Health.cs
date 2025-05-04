@@ -108,7 +108,7 @@ public class Health : MonoBehaviour
             Debug.Log("Armor fully negated damage");
             audioManager.PlaySoundEffect(audioManager.blockSound);
         }
-        else
+        else if (gameObject.name == "Hercules")
         {
             audioManager.PlaySoundEffect(audioManager.damageSound);
         }
