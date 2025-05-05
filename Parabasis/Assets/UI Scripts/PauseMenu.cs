@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
-
+    public GameObject glow;
     
     [SerializeField] GameObject pauseMenu;
 
@@ -13,6 +13,10 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(true);
         Time.timeScale = 0;
         
+        if (gameObject.name == "MaskMenu")
+        {
+            glow.SetActive(false);
+        }
     }
     public void MainMenu()
     {
@@ -30,6 +34,5 @@ public class PauseMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         Time.timeScale = 1;
-        
     }
 }

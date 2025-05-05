@@ -40,12 +40,6 @@ public class ObjectsFunctions : MonoBehaviour
                 health.health = 0;
                 Destroy(collision.gameObject);
             }
-            else if (gameObject.name == "boar")
-            {
-                Health health = collision.GetComponent<Health>();
-
-                health.Damage(1, Vector2.zero);
-            }
         }
     }
 }
