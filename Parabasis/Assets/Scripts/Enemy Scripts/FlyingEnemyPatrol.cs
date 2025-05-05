@@ -147,7 +147,7 @@ public class FlyingEnemyPatrol : MonoBehaviour
     {
         trigger = true;
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(1.8f);
 
         trigger = false;
     }
