@@ -50,6 +50,11 @@ public class Stunning : MonoBehaviour
                 MonsterMovement monsterMovement = gameObject.GetComponent<MonsterMovement>();
                 monsterMovement.enabled = false;
             }
+            if (gameObject.GetComponent<Boar>() != null)
+            {
+                Boar boar = gameObject.GetComponent<Boar>();
+                boar.enabled = false;
+            }
         }
         else
         {

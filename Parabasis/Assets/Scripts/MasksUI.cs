@@ -5,6 +5,8 @@ public class MasksUI : MonoBehaviour
 {
     public GameObject glow;
 
+    public TMP_Text noMasks;
+
     public GameObject history;
     public TMP_Text historyInfo;
     public GameObject dance;
@@ -19,18 +21,21 @@ public class MasksUI : MonoBehaviour
             glow.SetActive(true);
             history.SetActive(true);
             historyInfo.enabled = true;
+            noMasks.enabled = false;
         }
         else if (gameObject.name == "DashMask")
         {
             glow.SetActive(true);
             dance.SetActive(true);
             danceInfo.enabled = true;
+            noMasks.enabled = false;
         }
         else if (gameObject.name == "StunMask")
         {
             glow.SetActive(true);
             music.SetActive(true);
             musicInfo.enabled = true;
+            noMasks.enabled = false;
         }
     }
 }
