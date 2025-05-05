@@ -45,6 +45,11 @@ public class Stunning : MonoBehaviour
                 WalkingEnemyPatrol walkingEnemyPatrol = gameObject.GetComponent<WalkingEnemyPatrol>();
                 walkingEnemyPatrol.enabled = false;
             }
+            if (gameObject.GetComponent<MonsterMovement>() != null)
+            {
+                MonsterMovement monsterMovement = gameObject.GetComponent<MonsterMovement>();
+                monsterMovement.enabled = false;
+            }
         }
         else
         {
