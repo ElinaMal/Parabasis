@@ -1,25 +1,55 @@
 fileFormatVersion: 2
-guid: bed97d2c57328d3439a2af79c0803fea
+guid: b11a4c7c86803cf4aab86967ad998de6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8674034335363756155
-    second: spritesheet harpy_0
+      213: 5533118372078317598
+    second: herc spritesheet walk v2_0
   - first:
-      213: 1752314616813908810
-    second: spritesheet harpy_1
+      213: 7530555157077847499
+    second: herc spritesheet walk v2_1
   - first:
-      213: -2925636002724535821
-    second: spritesheet harpy_2
+      213: 8251137654094644547
+    second: herc spritesheet walk v2_2
   - first:
-      213: 1822057199000685110
-    second: spritesheet harpy_3
+      213: 4686107773017005727
+    second: herc spritesheet walk v2_3
   - first:
-      213: -3770442625310489072
-    second: spritesheet harpy_4
+      213: -4036507288030039443
+    second: herc spritesheet walk v2_4
   - first:
-      213: 7677877199980389146
-    second: spritesheet harpy_5
+      213: 3714024300085364572
+    second: herc spritesheet walk v2_5
+  - first:
+      213: 2729717344802504040
+    second: herc spritesheet walk v2_6
+  - first:
+      213: 5835981355532751054
+    second: herc spritesheet walk v2_7
+  - first:
+      213: 1846291450866189302
+    second: herc spritesheet walk v2_8
+  - first:
+      213: -566439322719951659
+    second: herc spritesheet walk v2_9
+  - first:
+      213: 7973461920373983198
+    second: herc spritesheet walk v2_10
+  - first:
+      213: 7669642903438336087
+    second: herc spritesheet walk v2_11
+  - first:
+      213: 8477878336246507376
+    second: herc spritesheet walk v2_12
+  - first:
+      213: -332519187973288831
+    second: herc spritesheet walk v2_13
+  - first:
+      213: -3650804658898352717
+    second: herc spritesheet walk v2_14
+  - first:
+      213: -8097552310778775950
+    second: herc spritesheet walk v2_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 200
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,101 +171,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet harpy_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58f0a1f9ab3af9780800000000000000
-      internalID: -8674034335363756155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_1
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a43faed1cd8715810800000000000000
-      internalID: 1752314616813908810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_2
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f1a2836e8d0667d0800000000000000
-      internalID: -2925636002724535821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_3
-      rect:
-        serializedVersion: 2
-        x: 5544
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63a01ea6e5f394910800000000000000
-      internalID: 1822057199000685110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_4
+      name: herc spritesheet walk v2_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1848
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,20 +186,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0168060b862bcabc0800000000000000
-      internalID: -3770442625310489072
+      spriteID: e107aebf7d599cc40800000000000000
+      internalID: 5533118372078317598
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spritesheet harpy_5
+      name: herc spritesheet walk v2_1
       rect:
         serializedVersion: 2
-        x: 1848
+        x: 712
         y: 0
-        width: 1848
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,8 +208,140 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a13e6ed52ac4d8a60800000000000000
-      internalID: 7677877199980389146
+      spriteID: bcd6c1b4408e18860800000000000000
+      internalID: 7530555157077847499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_2
+      rect:
+        serializedVersion: 2
+        x: 1424
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3454921eafde18270800000000000000
+      internalID: 8251137654094644547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_3
+      rect:
+        serializedVersion: 2
+        x: 2136
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e10e50136680140800000000000000
+      internalID: 4686107773017005727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_4
+      rect:
+        serializedVersion: 2
+        x: 2848
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d62b1b302027bf7c0800000000000000
+      internalID: -4036507288030039443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_5
+      rect:
+        serializedVersion: 2
+        x: 3560
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c57c1c55c6dda8330800000000000000
+      internalID: 3714024300085364572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_6
+      rect:
+        serializedVersion: 2
+        x: 4272
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dfc226677e1e520800000000000000
+      internalID: 2729717344802504040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: herc spritesheet walk v2_7
+      rect:
+        serializedVersion: 2
+        x: 4984
+        y: 0
+        width: 712
+        height: 712
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0155c5f129df050800000000000000
+      internalID: 5835981355532751054
       vertices: []
       indices: 
       edges: []
@@ -276,7 +350,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08d96e0a95dd04d488984ebeb829c3f8
+    spriteID: 20b4d902f8cb88e49af67ea618b4c5bf
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +360,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet harpy_0: -8674034335363756155
-      spritesheet harpy_1: 1752314616813908810
-      spritesheet harpy_2: -2925636002724535821
-      spritesheet harpy_3: 1822057199000685110
-      spritesheet harpy_4: -3770442625310489072
-      spritesheet harpy_5: 7677877199980389146
+      herc spritesheet walk v2_0: 5533118372078317598
+      herc spritesheet walk v2_1: 7530555157077847499
+      herc spritesheet walk v2_2: 8251137654094644547
+      herc spritesheet walk v2_3: 4686107773017005727
+      herc spritesheet walk v2_4: -4036507288030039443
+      herc spritesheet walk v2_5: 3714024300085364572
+      herc spritesheet walk v2_6: 2729717344802504040
+      herc spritesheet walk v2_7: 5835981355532751054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

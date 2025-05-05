@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: bed97d2c57328d3439a2af79c0803fea
+guid: 0994606d3ed610342af35e68d65ca801
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8674034335363756155
-    second: spritesheet harpy_0
-  - first:
-      213: 1752314616813908810
-    second: spritesheet harpy_1
-  - first:
-      213: -2925636002724535821
-    second: spritesheet harpy_2
-  - first:
-      213: 1822057199000685110
-    second: spritesheet harpy_3
-  - first:
-      213: -3770442625310489072
-    second: spritesheet harpy_4
-  - first:
-      213: 7677877199980389146
-    second: spritesheet harpy_5
+      213: 754329908462367691
+    second: Mask button_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -66,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -141,101 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spritesheet harpy_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58f0a1f9ab3af9780800000000000000
-      internalID: -8674034335363756155
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_1
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a43faed1cd8715810800000000000000
-      internalID: 1752314616813908810
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_2
-      rect:
-        serializedVersion: 2
-        x: 3696
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3f1a2836e8d0667d0800000000000000
-      internalID: -2925636002724535821
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_3
-      rect:
-        serializedVersion: 2
-        x: 5544
-        y: 3257
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 63a01ea6e5f394910800000000000000
-      internalID: 1822057199000685110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_4
+      name: Mask button_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1848
-        height: 3257
+        width: 2048
+        height: 2048
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,30 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0168060b862bcabc0800000000000000
-      internalID: -3770442625310489072
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spritesheet harpy_5
-      rect:
-        serializedVersion: 2
-        x: 1848
-        y: 0
-        width: 1848
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a13e6ed52ac4d8a60800000000000000
-      internalID: 7677877199980389146
+      spriteID: bc33a5d1e0be77a00800000000000000
+      internalID: 754329908462367691
       vertices: []
       indices: 
       edges: []
@@ -276,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 08d96e0a95dd04d488984ebeb829c3f8
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -286,12 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      spritesheet harpy_0: -8674034335363756155
-      spritesheet harpy_1: 1752314616813908810
-      spritesheet harpy_2: -2925636002724535821
-      spritesheet harpy_3: 1822057199000685110
-      spritesheet harpy_4: -3770442625310489072
-      spritesheet harpy_5: 7677877199980389146
+      Mask button_0: 754329908462367691
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
