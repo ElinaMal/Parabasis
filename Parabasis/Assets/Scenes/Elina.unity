@@ -48511,7 +48511,7 @@ MonoBehaviour:
   health3: {fileID: 7968103765348173484}
   health4: {fileID: 3891969718109890503}
   health5: {fileID: 5515093224734064822}
-  volume: {fileID: 0}
+  volume: {fileID: 461027664}
   vg: {fileID: 0}
   postPros: {fileID: 461027663}
 --- !u!4 &1257090671

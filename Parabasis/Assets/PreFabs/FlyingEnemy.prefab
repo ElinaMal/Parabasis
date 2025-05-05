@@ -140,7 +140,7 @@ MonoBehaviour:
   enemyPatrol: {fileID: 3463331777095191149}
   objectName: Hercules
   velocity: 10
-  setLimit: 15
+  setLimit: 10
 --- !u!114 &3463331777095191149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -164,7 +164,7 @@ MonoBehaviour:
   path: {x: 0, y: 0}
   correctionVelocity: 5
   velocity: 4
-  radius: 1.3
+  radius: 2
   trigger: 0
 --- !u!114 &5386516939777707529
 MonoBehaviour:
@@ -233,7 +233,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.54, y: 2.714551}
+    oldSize: {x: 2.31, y: 4.0718265}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

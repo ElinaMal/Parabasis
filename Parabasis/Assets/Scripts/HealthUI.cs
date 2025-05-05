@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 
@@ -15,16 +14,13 @@ public class HealthUI : MonoBehaviour
     public GameObject health5;
 
     public Volume volume;
-    public UnityEngine.Rendering.PostProcessing.Vignette vg;
+    public Vignette vg;
     public GameObject postPros;
 
     private void Start()
     {
         postPros = GameObject.Find("PostProcessing");
         volume = postPros.GetComponent<Volume>();
-        VolumeProfile vp = new VolumeProfile();
-        //vg = vp.TryGet(out vg);
-        //vg = volume.
     }
 
     // Update is called once per frame
@@ -37,7 +33,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(true);
             health4.SetActive(true);
             health5.SetActive(true);
-            vg.intensity.value = 0;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0);
+            }
         }
         else if (health.health == 4)
         {
@@ -46,7 +46,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(true);
             health4.SetActive(true);
             health5.SetActive(false);
-            vg.intensity.value = 0.3f;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0.4f);
+            }
         }
         else if (health.health == 3)
         {
@@ -55,7 +59,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(true);
             health4.SetActive(false);
             health5.SetActive(false);
-            vg.intensity.value = 0.4f;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0.5f);
+            }
         }
         else if (health.health == 2)
         {
@@ -64,7 +72,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(false);
             health4.SetActive(false);
             health5.SetActive(false);
-            vg.intensity.value = 0.5f;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0.55f);
+            }
         }
         else if (health.health == 1)
         {
@@ -73,7 +85,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(false);
             health4.SetActive(false);
             health5.SetActive(false);
-            vg.intensity.value = 0.6f;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0.6f);
+            }
         }
         else
         {
@@ -82,7 +98,11 @@ public class HealthUI : MonoBehaviour
             health3.SetActive(false);
             health4.SetActive(false);
             health5.SetActive(false);
-            vg.intensity.value = 0;
+
+            if (volume.profile.TryGet(out vg))
+            {
+                vg.intensity.Override(0);
+            }
 
             SceneManager.LoadSceneAsync(4);
         }
