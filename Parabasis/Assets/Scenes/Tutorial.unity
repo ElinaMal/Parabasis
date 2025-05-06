@@ -1902,7 +1902,8 @@ MonoBehaviour:
       have 5 lives. "
     - "And remember \u2014 hesitation kills. Move like you mean it cause you only
       have 5 lives. Oh and yeah by the way you can find items on the way that can
-      help you not die immediately. Don\u2019t Die"
+      help you not die immediately."
+    - "Don\u2019t Die"
 --- !u!114 &1588024040
 MonoBehaviour:
   m_ObjectHideFlags: 0

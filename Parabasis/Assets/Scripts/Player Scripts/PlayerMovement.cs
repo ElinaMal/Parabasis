@@ -117,6 +117,23 @@ public class PlayerMovement : MonoBehaviour
         }
 
         anim.SetBool("isWalking", isWalking);
+
+        if (rb.linearVelocityY > 0f)
+        {
+            anim.SetBool("isJumping", true);
+        }
+        else
+        {
+            anim.SetBool("isJumping", false);
+        }
+        if (rb.linearVelocityY < 0f)
+        {
+            anim.SetBool("isFalling", true);
+        }
+        else
+        {
+            anim.SetBool("isFalling", false);
+        }
     }
 
     public void Jump(InputAction.CallbackContext ctx)
@@ -125,6 +142,7 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.up * jumpSpeed, ForceMode2D.Impulse);
             audioManager.PlaySoundEffect(audioManager.jumpSound);
+            anim.SetBool("isJumping", true);
         }
 
         if (!isDashing && readyJump && !knockback.IsBeingKnockedBack && IsGrounded() == false && ctx.ReadValue<float>() == 1)
@@ -132,6 +150,7 @@ public class PlayerMovement : MonoBehaviour
             rb.linearVelocityY = 0;
             rb.AddForce(Vector2.up * dJumpSpeed, ForceMode2D.Impulse);
             audioManager.PlaySoundEffect(audioManager.jumpSound);
+            anim.SetBool("isJumping", true);
             readyJump = false;
         }
     }
