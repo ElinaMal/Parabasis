@@ -20,7 +20,10 @@ public class HealthUI : MonoBehaviour
     private void Start()
     {
         postPros = GameObject.Find("PostProcessing");
-        volume = postPros.GetComponent<Volume>();
+        if (postPros.GetComponent<Volume>() != null)
+        {
+            volume = postPros.GetComponent<Volume>();
+        }
     }
 
     // Update is called once per frame
@@ -49,7 +52,7 @@ public class HealthUI : MonoBehaviour
 
             if (volume.profile.TryGet(out vg))
             {
-                vg.intensity.Override(0.4f);
+                vg.intensity.Override(0.45f);
             }
         }
         else if (health.health == 3)
