@@ -19,11 +19,11 @@ public class CameraFunctions : MonoBehaviour
             vel, damping);
         }
 
-        Transform child = gameObject.transform.GetChild(0);
+        Transform child = gameObject.transform.GetChild(1);
 
         if (child.position.x < transform.position.x - 42)
         {
-            Instantiate(preFab, new Vector3(child.position.x + 84, child.position.y, 0), Quaternion.identity, transform);
+            Instantiate(preFab, new Vector3(child.position.x + 92, child.position.y, 0), Quaternion.identity, transform);
             Destroy(child.gameObject);
         }
     }

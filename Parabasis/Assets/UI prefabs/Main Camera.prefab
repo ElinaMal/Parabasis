@@ -28,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.18826675, y: 0, z: 10}
-  m_LocalScale: {x: 2.2, y: 2.2, z: 1}
+  m_LocalScale: {x: 3.5, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 955744187555566800}
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 28feadcb04bc4a24c993befe3ea56522, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8584906, g: 0.8584906, b: 0.8584906, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -135,13 +135,13 @@ Transform:
   m_GameObject: {fileID: 5396466913699962671}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.18823242, y: 2.0000038, z: -10}
+  m_LocalPosition: {x: 1.4294434, y: 2.1399994, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 938978297998668042}
   - {fileID: 68289626461760463}
   - {fileID: 4802826327593412680}
-  - {fileID: 938978297998668042}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &1396943134021013573
@@ -179,7 +179,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 9.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -395,6 +395,18 @@ PrefabInstance:
       value: Parallax Clouds1
       objectReference: {fileID: 0}
     - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -408,15 +420,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42
+      value: 45.96
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalPosition.y
@@ -454,8 +466,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6690885653676850548, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -529,6 +540,18 @@ PrefabInstance:
       value: Parallax Clouds
       objectReference: {fileID: 0}
     - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.b
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.g
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
+      propertyPath: m_Color.r
+      value: 0.8584906
+      objectReference: {fileID: 0}
+    - target: {fileID: 6878341435449452305, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_SortingLayer
       value: 0
       objectReference: {fileID: 0}
@@ -542,11 +565,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.x
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalScale.y
-      value: 2
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 9127874620898756118, guid: 5c0623f9b382f854eb339e595e1bbf89, type: 3}
       propertyPath: m_LocalPosition.x
