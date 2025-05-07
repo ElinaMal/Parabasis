@@ -55,7 +55,7 @@ public class Health : MonoBehaviour
     }
     */
 
-    void Awake()
+    private void Awake()
     {
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<SoundEffects>();
     }

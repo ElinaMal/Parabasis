@@ -41,7 +41,7 @@ AudioSource:
   m_GameObject: {fileID: 1121678023443380120}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 967751103840258183, guid: f6cc8851a1b934341be6d4fa65357895, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -175,7 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 585f7ac00a6af564eb67ee2a819b13f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSetting: {fileID: 0}
   soundEffectsSourse: {fileID: 6480639569769234248}
   music: {fileID: 2706948128049629104}
   jumpSound: {fileID: 8300000, guid: 43600e439352bef4f86025b8da08b790, type: 3}
@@ -228,13 +227,13 @@ AudioSource:
   m_GameObject: {fileID: 4663240977789548286}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 3594940181565711578, guid: f6cc8851a1b934341be6d4fa65357895, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

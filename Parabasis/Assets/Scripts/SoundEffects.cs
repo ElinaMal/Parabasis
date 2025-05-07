@@ -19,4 +19,23 @@ public class SoundEffects : MonoBehaviour
     {
         soundEffectsSourse.PlayOneShot(clip);
     }
+    private void Start()
+    {
+        music.clip = background;
+        music.Play();
+    }
+
+    public static SoundEffects instance;
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 }
