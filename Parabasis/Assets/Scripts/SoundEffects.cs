@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class SoundEffects : MonoBehaviour
 {
-    public VolumeSetting volumeSetting;
-
     [SerializeField] AudioSource soundEffectsSourse;
     [SerializeField] AudioSource music;
 
