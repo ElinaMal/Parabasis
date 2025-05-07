@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Merveille Credits_0: 2568620178417342520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
