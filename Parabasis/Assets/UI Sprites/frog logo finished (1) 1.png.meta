@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 6b4eb5d095ec4094db31227e90274260
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1404405792875848024
+    second: frog logo finished (1) 1_0
+  - first:
+      213: -431078248191687250
+    second: frog logo finished (1) 1_1
+  - first:
+      213: -1617550766061608456
+    second: frog logo finished (1) 1_2
+  - first:
+      213: 3758733434259718646
+    second: frog logo finished (1) 1_3
+  - first:
+      213: 2253658977821973139
+    second: frog logo finished (1) 1_4
+  - first:
+      213: 2654013893543551084
+    second: frog logo finished (1) 1_5
+  - first:
+      213: 7108255485784013537
+    second: frog logo finished (1) 1_6
+  - first:
+      213: 6640524392365623869
+    second: frog logo finished (1) 1_7
+  - first:
+      213: -3562970259288697294
+    second: frog logo finished (1) 1_8
+  - first:
+      213: -4079854861530163480
+    second: frog logo finished (1) 1_9
+  - first:
+      213: -3943485609262875497
+    second: frog logo finished (1) 1_10
+  - first:
+      213: 5251156908104257001
+    second: frog logo finished (1) 1_11
+  - first:
+      213: -3395193472329288185
+    second: frog logo finished (1) 1_12
+  - first:
+      213: -1002835232893508418
+    second: frog logo finished (1) 1_13
+  - first:
+      213: 6135762130697973119
+    second: frog logo finished (1) 1_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_0
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 1013
+        width: 42
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ae522b4f5c828ce0800000000000000
+      internalID: -1404405792875848024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_1
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 1013
+        width: 42
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea503220e90840af0800000000000000
+      internalID: -431078248191687250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_2
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 1013
+        width: 52
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f1acbef52e4d89e0800000000000000
+      internalID: -1617550766061608456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 994
+        width: 52
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f14f62d424b92430800000000000000
+      internalID: 3758733434259718646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_4
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 85
+        width: 1054
+        height: 1049
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ad2f166ea964f10800000000000000
+      internalID: 2253658977821973139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_5
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 968
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c606d991393f4d420800000000000000
+      internalID: 2654013893543551084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_6
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 117
+        width: 52
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eab0e204b895a260800000000000000
+      internalID: 7108255485784013537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_7
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3a054970c1e72c50800000000000000
+      internalID: 6640524392365623869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_8
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236d0d53d69cd8ec0800000000000000
+      internalID: -3562970259288697294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_9
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e618539e917167c0800000000000000
+      internalID: -4079854861530163480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_10
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79c750b5bbce549c0800000000000000
+      internalID: -3943485609262875497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_11
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed8467d26bdfd840800000000000000
+      internalID: 5251156908104257001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_12
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 117
+        width: 52
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70676128689d1e0d0800000000000000
+      internalID: -3395193472329288185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_13
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 117
+        width: 33
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb4e22f3ba63512f0800000000000000
+      internalID: -1002835232893508418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: frog logo finished (1) 1_14
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 117
+        width: 42
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7deb82362b962550800000000000000
+      internalID: 6135762130697973119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 26db0fa9aa8053c4a84f6e6dd92d288e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      frog logo finished (1) 1_0: -1404405792875848024
+      frog logo finished (1) 1_1: -431078248191687250
+      frog logo finished (1) 1_10: -3943485609262875497
+      frog logo finished (1) 1_11: 5251156908104257001
+      frog logo finished (1) 1_12: -3395193472329288185
+      frog logo finished (1) 1_13: -1002835232893508418
+      frog logo finished (1) 1_14: 6135762130697973119
+      frog logo finished (1) 1_2: -1617550766061608456
+      frog logo finished (1) 1_3: 3758733434259718646
+      frog logo finished (1) 1_4: 2253658977821973139
+      frog logo finished (1) 1_5: 2654013893543551084
+      frog logo finished (1) 1_6: 7108255485784013537
+      frog logo finished (1) 1_7: 6640524392365623869
+      frog logo finished (1) 1_8: -3562970259288697294
+      frog logo finished (1) 1_9: -4079854861530163480
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
