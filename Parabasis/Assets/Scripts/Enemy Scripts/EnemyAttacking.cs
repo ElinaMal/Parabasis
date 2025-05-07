@@ -50,7 +50,7 @@ public class EnemyAttacking : MonoBehaviour
             {
                 if (hit.collider.GetComponent<Health>() != null && canAttack)
                 {
-                    anim.SetBool("isAttacking", true);
+                    anim.SetTrigger("isAttacking");
                     canAttack = false;
                     attackTime = 0;
                     attacking = true;

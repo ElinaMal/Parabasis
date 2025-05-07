@@ -15,6 +15,7 @@ public class PlayerMelee : MonoBehaviour
     public bool stunUnlocked = false;
     public bool stunReady = true;
     public SoundEffects audioManager;
+    public Animator anim;
 
     void Awake()
     {
@@ -44,6 +45,7 @@ public class PlayerMelee : MonoBehaviour
     private IEnumerator Melee()
     {
         isAttacking = true;
+        anim.SetTrigger("isAttacking");
         attackArea.SetActive(true);
         yield return new WaitForSeconds(attackTime);
         attackArea.SetActive(false);
@@ -53,6 +55,7 @@ public class PlayerMelee : MonoBehaviour
     private IEnumerator Stun()
     {
         isAttacking = true;
+        anim.SetTrigger("isStunning");
         stunArea.SetActive(true);
         yield return new WaitForSeconds(stunTime);
         stunArea.SetActive(false);

@@ -33,9 +33,9 @@ public class Health : MonoBehaviour
     public PlayerMovement playerMovement;
 
 
-    
-    //public Animator anim;
-    
+
+    public Animator anim;
+
 
     public bool isDead = false;
 
@@ -168,7 +168,7 @@ public class Health : MonoBehaviour
         Debug.Log("I am Dead!");
 
         //anim.ResetTrigger("isHurt");
-        //anim.SetBool("isDying", true);
+        anim.SetTrigger("isDead");
 
         isDead = true;
         //gameObject.tag = "Dead";
@@ -181,7 +181,47 @@ public class Health : MonoBehaviour
         {
             GetComponent<CapsuleCollider2D>().enabled = false;
         }
+        if (GetComponent<EnemyAttacking>() != null)
+        {
+            GetComponent<EnemyAttacking>().enabled = false;
+        }
+        if (GetComponent<FlyingEnemyPatrol>() != null)
+        {
+            GetComponent<FlyingEnemyPatrol>().enabled = false;
+        }
+        if (GetComponent<FlyingEnemyPlayer>() != null)
+        {
+            GetComponent<FlyingEnemyPlayer>().enabled = false;
+        }
+        if (GetComponent<WalkingEnemyPatrol>() != null)
+        {
+            GetComponent<WalkingEnemyPatrol>().enabled = false;
+        }
+        if (GetComponent<EnemyChasePlayer>() != null)
+        {
+            GetComponent<EnemyChasePlayer>().enabled = false;
+        }
+        if (GetComponent<Boar>() != null)
+        {
+            GetComponent<Boar>().enabled = false;
+        }
+        if (GetComponent<MonsterMovement>() != null)
+        {
+            GetComponent<MonsterMovement>().enabled = false;
+        }
+        if (GetComponent<PlayerMovement>() != null)
+        {
+            GetComponent<PlayerMovement>().enabled = false;
+        }
+        if (GetComponent<PlayerMelee>() != null)
+        {
+            GetComponent<PlayerMelee>().enabled = false;
+        }
+        if (GetComponent<PlayerBlock>() != null)
+        {
+            GetComponent<PlayerBlock>().enabled = false;
+        }
 
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }
