@@ -180,6 +180,7 @@ MonoBehaviour:
   burnDamage: 0
   knockback: {fileID: 0}
   playerMovement: {fileID: 0}
+  anim: {fileID: 3293178818573362970}
   isDead: 0
 --- !u!114 &2856574820683446599
 MonoBehaviour:

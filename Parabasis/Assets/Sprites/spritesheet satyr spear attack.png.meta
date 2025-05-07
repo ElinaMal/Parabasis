@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: d864c4623afde354abe64e794a74c008
+guid: a08f277b7b50e4f4ab447456c54b9197
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7656600236480395858
-    second: hpyatkspritesheet_0
+      213: 6689668952025472655
+    second: spritesheet satyr spear attack_0
   - first:
-      213: -3473884906312678056
-    second: hpyatkspritesheet_1
+      213: -5304311438982446399
+    second: spritesheet satyr spear attack_1
   - first:
-      213: 2931074655408914774
-    second: hpyatkspritesheet_2
+      213: 2972420284320649519
+    second: spritesheet satyr spear attack_2
   - first:
-      213: -7191267592160111763
-    second: hpyatkspritesheet_3
-  - first:
-      213: -6871333636584419928
-    second: hpyatkspritesheet_4
-  - first:
-      213: 256164595446247729
-    second: hpyatkspritesheet_5
-  - first:
-      213: 1129513291050422837
-    second: hpyatkspritesheet_6
-  - first:
-      213: 8614509505566542423
-    second: hpyatkspritesheet_7
+      213: -4398602162172104002
+    second: spritesheet satyr spear attack_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -72,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -147,155 +135,89 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hpyatkspritesheet_0
+      name: spritesheet satyr spear attack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1993
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25af5924955b14a60800000000000000
-      internalID: 7656600236480395858
+      spriteID: 16730f1a1fbe0fe4c9af77f038053ab3
+      internalID: -755994061
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hpyatkspritesheet_1
+      name: spritesheet satyr spear attack_1
       rect:
         serializedVersion: 2
-        x: 1993
+        x: 712
         y: 0
-        width: 1993
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 85544a845184acfc0800000000000000
-      internalID: -3473884906312678056
+      spriteID: 31efcd241f9b1274ca982c70f94b04ce
+      internalID: 1982597989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hpyatkspritesheet_2
+      name: spritesheet satyr spear attack_2
       rect:
         serializedVersion: 2
-        x: 3986
+        x: 1424
         y: 0
-        width: 1993
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6518ccd9ed44da820800000000000000
-      internalID: 2931074655408914774
+      spriteID: 4420aef846a63484f98e7afb5fd30630
+      internalID: 421430902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: hpyatkspritesheet_3
+      name: spritesheet satyr spear attack_3
       rect:
         serializedVersion: 2
-        x: 5979
+        x: 2136
         y: 0
-        width: 1993
-        height: 3257
+        width: 712
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: d639484d93c733c90800000000000000
-      internalID: -7191267592160111763
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hpyatkspritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 7972
-        y: 0
-        width: 1993
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8ad4132a67e14a0a0800000000000000
-      internalID: -6871333636584419928
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hpyatkspritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 9965
-        y: 0
-        width: 1993
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 131fa93a7541e8300800000000000000
-      internalID: 256164595446247729
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: hpyatkspritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 11958
-        y: 0
-        width: 1993
-        height: 3257
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53294229a56dcaf00800000000000000
-      internalID: 1129513291050422837
+      spriteID: 74c93e51c4d2f1b4d89e4bbc4679fe89
+      internalID: 743940426
       vertices: []
       indices: 
       edges: []
@@ -304,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c9f3dbf2bc081b94c94d2fa40a867315
+    spriteID: 3110cab7927fb5c46977c0ee05b4c4d1
     internalID: 0
     vertices: []
     indices: 
@@ -314,13 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      hpyatkspritesheet_0: 7656600236480395858
-      hpyatkspritesheet_1: -3473884906312678056
-      hpyatkspritesheet_2: 2931074655408914774
-      hpyatkspritesheet_3: -7191267592160111763
-      hpyatkspritesheet_4: -6871333636584419928
-      hpyatkspritesheet_5: 256164595446247729
-      hpyatkspritesheet_6: 1129513291050422837
+      spritesheet satyr spear attack_0: -755994061
+      spritesheet satyr spear attack_1: 1982597989
+      spritesheet satyr spear attack_2: 421430902
+      spritesheet satyr spear attack_3: 743940426
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
