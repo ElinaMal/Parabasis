@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 7874589845379231824}
   - component: {fileID: 5879956314227511802}
   - component: {fileID: 710495303018821179}
-  - component: {fileID: -5827196367371185599}
   - component: {fileID: -1830380071150041792}
+  - component: {fileID: 863427959519402401}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -80,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: -387686595
   m_SortingLayer: 2
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -4346244404228752641, guid: 0cd714b897e241a40852d461f8af774e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,8 +119,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ed027083bc8dd4b85e44625f375367, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!70 &-5827196367371185599
-CapsuleCollider2D:
+--- !u!114 &-1830380071150041792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3160051998110086905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff92a7a186bd8c4aa61005b560664ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileVisual: {fileID: 815298702032459679}
+  projectileShadow: {fileID: 815298702032459679}
+  bulletScript: {fileID: 5879956314227511802}
+--- !u!61 &863427959519402401
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -153,21 +168,15 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
-  m_Direction: 0
---- !u!114 &-1830380071150041792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3160051998110086905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff92a7a186bd8c4aa61005b560664ef, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  projectileVisual: {fileID: 815298702032459679}
-  projectileShadow: {fileID: 815298702032459679}
-  bulletScript: {fileID: 5879956314227511802}
+  m_Offset: {x: 0.015991211, y: 0.00000011920929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.7066667, y: 0.36}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.7382708, y: 0.36525083}
+  m_EdgeRadius: 0
