@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 1329088470355234427}
   - component: {fileID: 5224735129254052056}
   - component: {fileID: 912958160727382500}
-  - component: {fileID: 8598178409899619335}
   - component: {fileID: 4239889108148882985}
+  - component: {fileID: 5180658201282010252}
   m_Layer: 8
   m_Name: Enemy
   m_TagString: Enemy
@@ -182,6 +182,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   attacking: 0
+  anim: {fileID: 0}
   attackRange: 1
   timer: 0
   attackLimit: 0.5
@@ -196,8 +197,33 @@ MonoBehaviour:
   Burn: 0
   burnAmount: 0
   burnDamage: 0
---- !u!61 &8598178409899619335
-BoxCollider2D:
+--- !u!114 &4239889108148882985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7654734507605447578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
+  health: 3
+  MAX_HEALTH: 3
+  defense: 0
+  pierceRes: 0
+  slashRes: 0
+  bluntRes: 0
+  burnRes: 0
+  burnTicks: 0
+  burnDamage: 0
+  knockback: {fileID: 0}
+  playerMovement: {fileID: 0}
+  isDead: 0
+--- !u!70 &5180658201282010252
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -230,38 +256,6 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0016038418, y: 0.1387898}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 0.59784436, y: 0.8741378}
-  m_EdgeRadius: 0
---- !u!114 &4239889108148882985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7654734507605447578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c06f4354316891243820071aae6e201d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  postProcessing: {fileID: 0}
-  health: 3
-  MAX_HEALTH: 3
-  defense: 0
-  pierceRes: 0
-  slashRes: 0
-  bluntRes: 0
-  burnRes: 0
-  burnTicks: 0
-  burnDamage: 0
-  isDead: 0
+  m_Offset: {x: 0, y: 0.7116351}
+  m_Size: {x: 1, y: 2.0006037}
+  m_Direction: 0
