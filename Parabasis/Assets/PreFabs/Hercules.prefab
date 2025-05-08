@@ -391,6 +391,7 @@ MonoBehaviour:
   burnDamage: 0
   knockback: {fileID: 4935061833725961232}
   playerMovement: {fileID: 2039445259783159924}
+  anim: {fileID: 776416994703826955}
   isDead: 0
 --- !u!114 &993865051410391003
 MonoBehaviour:
@@ -415,6 +416,7 @@ MonoBehaviour:
   stunUnlocked: 1
   stunReady: 1
   audioManager: {fileID: 2536990681335274731, guid: b9879e75eb64a3145b65d94d19036742, type: 3}
+  anim: {fileID: 776416994703826955}
 --- !u!114 &1802712686709060317
 MonoBehaviour:
   m_ObjectHideFlags: 0
