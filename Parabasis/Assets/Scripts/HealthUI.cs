@@ -106,8 +106,6 @@ public class HealthUI : MonoBehaviour
             {
                 vg.intensity.Override(0);
             }
-
-            SceneManager.LoadSceneAsync(4);
         }
     }
 }

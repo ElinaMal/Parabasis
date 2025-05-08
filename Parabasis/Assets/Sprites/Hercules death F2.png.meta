@@ -103,10 +103,10 @@ TextureImporter:
       name: Hercules death F2_0
       rect:
         serializedVersion: 2
-        x: 1400
-        y: 12
-        width: 700
-        height: 700
+        x: 0
+        y: 0
+        width: 3560
+        height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: a36f93017d05ed246aaa4384088c2abf
+    spriteID: 8e9a19696a1a9544582d3e480a75c72b
     internalID: 0
     vertices: []
     indices: 

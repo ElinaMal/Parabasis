@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: aa07cf0dd92c2194285b00b678908228
+guid: 77e1f51ce0b72324a8d847ba5c1dbe7d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4336209926808005121
-    second: Hercules deathF5_0
+      213: 339396097083637638
+    second: hattack 5_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,12 +100,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Hercules deathF5_0
+      name: hattack 5_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 3560
+        width: 712
         height: 712
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 10ae9e644ff4d2c30800000000000000
-      internalID: 4336209926808005121
+      spriteID: 68ff2dcb3f6c5b400800000000000000
+      internalID: 339396097083637638
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: dcf125aa8c44b6a4eaf21f3cbe970d7f
+    spriteID: 9b4c9f367052e7843960068d58207557
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Hercules deathF5_0: 4336209926808005121
+      hattack 5_0: 339396097083637638
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
