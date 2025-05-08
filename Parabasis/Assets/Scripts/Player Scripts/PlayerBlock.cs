@@ -16,6 +16,7 @@ public class PlayerBlock : MonoBehaviour
     public float originalJumpSpeed;
     public float originaldJumpSpeed;
     public float originalDashPower;
+    public Animator anim;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class PlayerBlock : MonoBehaviour
             playerMelee.canAttack = false;
             playerMelee.canStun = false;
             health.defense = blockAmount;
+            anim.SetBool("isBlocking", true);
         }
 
         if (ctx.ReadValue<float>() == 0)
@@ -47,6 +49,7 @@ public class PlayerBlock : MonoBehaviour
             playerMovement.dashingPower = originalDashPower;
             playerMelee.canAttack = true;
             playerMelee.canStun = true;
+            anim.SetBool("isBlocking", false);
         }
     }
 }

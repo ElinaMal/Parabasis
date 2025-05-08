@@ -442,6 +442,7 @@ MonoBehaviour:
   originalJumpSpeed: 0
   originaldJumpSpeed: 0
   originalDashPower: 0
+  anim: {fileID: 776416994703826955}
 --- !u!95 &776416994703826955
 Animator:
   serializedVersion: 7
