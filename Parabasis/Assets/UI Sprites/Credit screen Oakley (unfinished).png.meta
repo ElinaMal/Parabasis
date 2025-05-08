@@ -1,52 +1,10 @@
 fileFormatVersion: 2
-guid: 6b4eb5d095ec4094db31227e90274260
+guid: 5d4b3bbc3e0b89a459b49c8641edbae1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1404405792875848024
-    second: frog logo finished (1) 1_0
-  - first:
-      213: -431078248191687250
-    second: frog logo finished (1) 1_1
-  - first:
-      213: -1617550766061608456
-    second: frog logo finished (1) 1_2
-  - first:
-      213: 3758733434259718646
-    second: frog logo finished (1) 1_3
-  - first:
-      213: 2253658977821973139
-    second: frog logo finished (1) 1_4
-  - first:
-      213: 2654013893543551084
-    second: frog logo finished (1) 1_5
-  - first:
-      213: 7108255485784013537
-    second: frog logo finished (1) 1_6
-  - first:
-      213: 6640524392365623869
-    second: frog logo finished (1) 1_7
-  - first:
-      213: -3562970259288697294
-    second: frog logo finished (1) 1_8
-  - first:
-      213: -4079854861530163480
-    second: frog logo finished (1) 1_9
-  - first:
-      213: -3943485609262875497
-    second: frog logo finished (1) 1_10
-  - first:
-      213: 5251156908104257001
-    second: frog logo finished (1) 1_11
-  - first:
-      213: -3395193472329288185
-    second: frog logo finished (1) 1_12
-  - first:
-      213: -1002835232893508418
-    second: frog logo finished (1) 1_13
-  - first:
-      213: 6135762130697973119
-    second: frog logo finished (1) 1_14
+      213: 8714870036727529498
+    second: Credit screen Oakley (unfinished)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -138,43 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frog logo finished (1) 1_0
+      name: Credit screen Oakley (unfinished)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 1200
+        width: 1024
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8ae522b4f5c828ce0800000000000000
-      internalID: -1404405792875848024
+      spriteID: a1007d2002071f870800000000000000
+      internalID: 8714870036727529498
       vertices: []
       indices: 
       edges: []
@@ -193,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 26db0fa9aa8053c4a84f6e6dd92d288e
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -202,8 +134,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      frog logo finished (1) 1_0: -1404405792875848024
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

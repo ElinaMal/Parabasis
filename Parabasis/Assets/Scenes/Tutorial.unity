@@ -1902,15 +1902,18 @@ MonoBehaviour:
       and right."
     - Next is your jump. Hit the Spacebar to get off the ground. Easy lift.
     - "Now let\u2019s talk defense. When something tries to hit you, click on the
-      Right Mouse Button to block."
+      Right Mouse Button to block. And to attack click on the Left  Mousse Button."
     - Blocking can save your skin, but it prevents you from doing anything else.
-    - "To recap \u2014\r\nA and D to walk,\r\nSpacebar to jump,\r\nRight Mouse Button
-      to block,\r\n"
+    - "To recap \u2014\r\nA and D to walk,\r\nSpacebar to jump,\r\r\n"
+    - 'Right Mouse Button to block,
+
+      Left Mouse Button to attack
+
+'
     - "And remember \u2014 hesitation kills. Move like you mean it cause you only
       have 5 lives. "
-    - "And remember \u2014 hesitation kills. Move like you mean it cause you only
-      have 5 lives. Oh and yeah by the way you can find items on the way that can
-      help you not die immediately."
+    - Oh and yeah by the way you can find items on the way that can help you not
+      die immediately.
     - "Don\u2019t Die"
 --- !u!114 &1588024040
 MonoBehaviour:
