@@ -8,7 +8,7 @@ public class NPCRangedAttack : MonoBehaviour
     [SerializeField] private GameObject bullet;
     //[SerializeField] private GameObject targetDetectorObject;
     [SerializeField] private Transform target;
-    //[SerializeField] private Animator anim;
+    [SerializeField] private Animator anim;
 
     [SerializeField] private float shootRate;
     [SerializeField] private float shootTimer;
@@ -57,7 +57,7 @@ public class NPCRangedAttack : MonoBehaviour
     {
         if (shootTimer <= 0 && distance <= detectionRange)
         {
-            //anim.SetTrigger("Shooting");
+            anim.SetTrigger("Shooting");
             shootTimer = shootRate;
             BulletScript bulletScript = Instantiate(bullet, transform.position, Quaternion.identity).GetComponent<BulletScript>();
             bulletScript.InitializeAnimationCurves(trajectoryAnimationCurve, axisCorrectionAnimationCurve, speedAnimationCurve);
