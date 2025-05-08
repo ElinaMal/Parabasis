@@ -160,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
         if (canDash && !isDashing && !knockback.IsBeingKnockedBack)
         {
             StartCoroutine(Dash());
+            anim.SetBool("isDashing", true);
         }
     }
 
@@ -177,6 +178,7 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = originalGravity;
         currentGravityScale = originalGravityMult;
         isDashing = false;
+        anim.SetBool("isDashing", false);
         //yield return new WaitForSeconds(dashingCooldown);
         //dashReady = true;
     }
