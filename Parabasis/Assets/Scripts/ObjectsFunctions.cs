@@ -38,7 +38,6 @@ public class ObjectsFunctions : MonoBehaviour
             {
                 Health health = collision.GetComponent<Health>();
                 health.health = 0;
-                Destroy(collision.gameObject);
             }
         }
     }
