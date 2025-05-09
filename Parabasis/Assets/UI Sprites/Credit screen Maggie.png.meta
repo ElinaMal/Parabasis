@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Credit screen Maggie_0: -4020282068070655985
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
