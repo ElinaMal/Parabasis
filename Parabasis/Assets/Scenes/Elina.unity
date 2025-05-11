@@ -70331,6 +70331,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
+      propertyPath: isWalking
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2039445259783159924, guid: 8cd28894fe62f104681e0c72ddc44416, type: 3}
       propertyPath: jumpSpeed
       value: 13
       objectReference: {fileID: 0}

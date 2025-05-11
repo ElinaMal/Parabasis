@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ObjectsFunctions : MonoBehaviour
 {
@@ -38,6 +39,7 @@ public class ObjectsFunctions : MonoBehaviour
             {
                 Health health = collision.GetComponent<Health>();
                 health.health = 0;
+                SceneManager.LoadSceneAsync(4);
             }
         }
     }
