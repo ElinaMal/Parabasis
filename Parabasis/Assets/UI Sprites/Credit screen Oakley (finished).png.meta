@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: cc6be0626840cf44581e03c8435b4d74
+guid: edf5bb7b551845447a81fb16019e8c27
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2001275683136386932
-    second: frog logo finished_0
-  - first:
-      213: 7807981914976871133
-    second: frog logo finished_1
+      213: 2293089737734542895
+    second: Credit screen Oakley (finished)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -40,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -77,7 +74,7 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -129,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: frog logo finished_0
+      name: Credit screen Oakley (finished)_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1200
-        height: 1200
+        width: 1024
+        height: 768
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8847019e5a0a34e0800000000000000
-      internalID: -2001275683136386932
+      spriteID: f26d2c797f0b2df10800000000000000
+      internalID: 2293089737734542895
       vertices: []
       indices: 
       edges: []
@@ -154,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 0bb3b4873d18b014ebe9a58fe2f82947
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -163,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      frog logo finished_0: -2001275683136386932
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
